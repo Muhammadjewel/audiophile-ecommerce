@@ -16,6 +16,10 @@ img {
   height: auto;
 }
 
+*:focus {
+  @include outline($color-primary);
+}
+
 
 /* AUTOFILL-STYLES */
 /*input:-webkit-autofill,
