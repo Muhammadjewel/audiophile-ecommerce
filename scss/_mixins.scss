@@ -1,3 +1,8 @@
+@mixin outline ($outline-color) {
+  outline: 2px dashed $outline-color;
+  outline-offset: 3px;
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
