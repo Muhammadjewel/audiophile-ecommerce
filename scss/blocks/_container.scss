@@ -1,9 +1,15 @@
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 74.375rem;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (max-width: 40em) {
+  :root {
+    --container-padding: 24px;
+  }
 }

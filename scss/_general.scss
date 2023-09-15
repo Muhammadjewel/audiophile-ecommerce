@@ -4,11 +4,12 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  font-family: "Manrope", "Arial", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 166.667%;
+  background-color: var(--color-bg-body);
+  color: var(--color-body-text);
 }
 
 img {
