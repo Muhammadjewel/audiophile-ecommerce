@@ -120,6 +120,16 @@ img {
   height: auto;
 }
 
+a {
+  color: var(--color-primary);
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  opacity: 0.6;
+}
+
 *:focus {
   outline: 2px dashed #d87d4a;
   outline-offset: 3px;
@@ -252,6 +262,14 @@ select:-webkit-autofill:focus {
 .arrow-link--stretched:focus::before {
   outline: 2px dashed #d87d4a;
   outline-offset: 3px;
+}
+
+.back-link {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+.back-link:hover {
+  color: var(--color-primary);
 }
 
 /* MAIN-CONTENT */
