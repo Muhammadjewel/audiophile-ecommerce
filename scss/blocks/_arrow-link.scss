@@ -1,0 +1,49 @@
+@use 'sass:color';
+
+.arrow-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: color.scale($color-black, $alpha: -50%);
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &::after {
+    width: 8px;
+    height: 12px;
+    background-image: url("../img/arrow-right-primary.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+
+  &--stretched::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+  }
+
+  &--stretched:focus {
+    outline: none;
+
+    &::before {
+      @include outline($color-primary);
+    }
+  }
+}
