@@ -193,6 +193,7 @@ select:-webkit-autofill:focus {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  white-space: nowrap;
 }
 .button:hover {
   background-color: var(--color-grey-darker);
@@ -241,6 +242,7 @@ select:-webkit-autofill:focus {
   opacity: 0.6;
 }
 .arrow-link::after {
+  flex-shrink: 0;
   width: 8px;
   height: 12px;
   background-image: url("../img/arrow-right-primary.svg");

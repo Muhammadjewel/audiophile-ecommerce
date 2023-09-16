@@ -12,6 +12,7 @@
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  white-space: nowrap;
 
   &:hover {
     background-color: var(--color-grey-darker);
