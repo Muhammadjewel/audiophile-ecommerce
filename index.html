@@ -9,9 +9,34 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/main.min.css">
 </head>
-<body>
+<body style="padding: 32px 0; gap: 24px;">
 
+  <div class="container">
+    <h1>UI elements</h1>
+  </div>
 
+  <section class="container">
+    <h2>Number controls</h2>
+    <div style="display: grid; gap: 24px;">
+      <div class="number-controls" data-item-count="1">
+        <p class="number-controls__count">
+          <span class="visually-hidden">Count</span>
+          <span class="number-controls__count-value">1</span>
+        </p>
+        <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
+        <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
+      </div>
+
+      <div class="number-controls number-controls--small" data-item-count="1">
+        <p class="number-controls__count">
+          <span class="visually-hidden">Count</span>
+          <span class="number-controls__count-value">1</span>
+        </p>
+        <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
+        <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
+      </div>
+    </div>
+  </section>
 
   <script src="js/main.js"></script>
 </body>

@@ -1,0 +1,41 @@
+@use 'sass:color';
+
+.number-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 120px;
+  height: 48px;
+  background-color: var(--color-grey);
+  color: var(--color-body-text);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--small {
+    width: 96px;
+    height: 32px;
+    line-height: 32px;
+  }
+}
+
+.number-controls__button {
+  border: 0;
+  padding: 0;
+  color: color.scale($color-black, $alpha: -75%);
+  cursor: pointer;
+
+  &--decrement {
+    order: -1;
+  }
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

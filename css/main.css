@@ -272,6 +272,42 @@ select:-webkit-autofill:focus {
   color: var(--color-primary);
 }
 
+.number-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 120px;
+  height: 48px;
+  background-color: var(--color-grey);
+  color: var(--color-body-text);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.number-controls--small {
+  width: 96px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.number-controls__button {
+  border: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.number-controls__button--decrement {
+  order: -1;
+}
+.number-controls__button:hover {
+  color: #d87d4a;
+}
+.number-controls__button:active {
+  opacity: 0.6;
+}
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
