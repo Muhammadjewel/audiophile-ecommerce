@@ -12,7 +12,7 @@
   --color-primary: #d87d4a;
   --color-bg-body: #fafafa;
   --color-body-text: #000000;
-  --container-padding: 40px;
+  --container-padding: 24px;
 }
 
 /*
@@ -173,13 +173,18 @@ select:-webkit-autofill:focus {
 .container {
   width: 100%;
   max-width: 74.375rem;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
   margin-left: auto;
   margin-right: auto;
 }
 
 /* 640px */
+@media only screen and (min-width: 40em) {
+  :root {
+    --container-padding: 40px;
+  }
+}
 .button {
   display: inline-block;
   padding: 14px 29px;

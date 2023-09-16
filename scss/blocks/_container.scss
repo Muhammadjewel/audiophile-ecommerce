@@ -2,14 +2,17 @@
 .container {
   width: 100%;
   max-width: 74.375rem;
-  padding-left: $container-padding;
-  padding-right: $container-padding;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
   margin-left: auto;
   margin-right: auto;
 }
 
-@media only screen and (max-width: 40em) {
+/* 640px */
+@media only screen and (min-width: 40em) {
+  $container-padding: 40px;
+
   :root {
-    $container-padding: 24px;
+    --container-padding: #{$container-padding};
   }
 }
