@@ -22,6 +22,7 @@
   }
 
   &::after {
+    flex-shrink: 0;
     width: 8px;
     height: 12px;
     background-image: url("../img/arrow-right-primary.svg");
