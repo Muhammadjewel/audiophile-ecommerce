@@ -179,6 +179,7 @@ select:-webkit-autofill:focus {
   margin-right: auto;
 }
 
+/* 640px */
 .button {
   display: inline-block;
   padding: 14px 29px;
@@ -310,6 +311,42 @@ select:-webkit-autofill:focus {
   opacity: 0.6;
 }
 
+.sitenav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.sitenav__link {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 192.308%;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+.sitenav__link:hover {
+  color: var(--color-primary);
+}
+
+.sitenav__item--active .sitenav__link {
+  color: var(--color-primary);
+}
+
+/* 375px */
+@media only screen and (min-width: 23.4375em) {
+  .sitenav__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px 34px;
+  }
+}
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
