@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 /* GLOBAL */
 body {
   display: flex;
@@ -9,7 +11,7 @@ body {
   font-weight: 500;
   line-height: 166.667%;
   background-color: var(--color-bg-body);
-  color: var(--color-body-text);
+  color: color.scale($color-black, $alpha: -50%);
 }
 
 img {
