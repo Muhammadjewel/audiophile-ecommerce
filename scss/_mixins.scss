@@ -3,6 +3,12 @@
   outline-offset: 3px;
 }
 
+@mixin transition ($properties...) {
+  transition-duration: $transition-duration;
+  transition-timing-function: ease;
+  transition-property: $properties;
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
