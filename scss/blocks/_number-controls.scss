@@ -26,6 +26,7 @@
   padding: 0;
   color: color.scale($color-black, $alpha: -75%);
   cursor: pointer;
+  @include transition(color, opacity);
 
   &--decrement {
     order: -1;

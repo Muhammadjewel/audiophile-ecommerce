@@ -13,6 +13,7 @@
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
+  @include transition(background-color, opacity);
 
   &:hover {
     background-color: var(--color-grey-darker);
@@ -36,6 +37,7 @@
     border-color: var(--color-black);
     background-color: transparent;
     color: var(--color-black);
+    @include transition(background-color, color, opacity);
 
     &:hover {
       background-color: var(--color-black);

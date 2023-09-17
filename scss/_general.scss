@@ -18,6 +18,7 @@ img {
 
 a {
   color: var(--color-primary);
+  @include transition(color, opacity);
 
   &:hover {
     text-decoration: none;
