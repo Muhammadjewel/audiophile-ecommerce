@@ -1,0 +1,76 @@
+@use 'sass:color';
+
+.product-info {
+  display: grid;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.product-info--big {
+}
+.product-info--white {
+}
+
+.product-info__title {
+  margin-bottom: 24px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  color: var(--color-black);
+  text-transform: uppercase;
+
+  .product-info--white & {
+    color: $color-white;
+  }
+}
+
+.product-info__new {
+  order: -1;
+  margin-bottom: 24px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.625rem;
+  color: var(--color-primary);
+  text-transform: uppercase;
+
+  .product-info--white & {
+    color: color.scale($color-white, $alpha: -50%);
+  }
+}
+
+.product-info__text {
+  margin-bottom: 24px;
+
+  .product-info--white & {
+    color: color.scale($color-white, $alpha: -25%);
+  }
+}
+
+.product-info__price-wrapper {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.product-info__price {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.08038rem;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.product-info__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  .product-info--center & {
+    justify-content: center;
+  }
+}
