@@ -1,0 +1,20 @@
+.socials__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.socials__link {
+  display: block;
+  color: var(--color-white);
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+.socials__icon {
+  display: block;
+}

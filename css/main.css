@@ -352,6 +352,26 @@ select:-webkit-autofill:focus {
     gap: 12px 34px;
   }
 }
+.socials__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.socials__link {
+  display: block;
+  color: var(--color-white);
+}
+.socials__link:hover {
+  color: var(--color-primary);
+}
+
+.socials__icon {
+  display: block;
+}
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
