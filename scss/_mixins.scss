@@ -32,3 +32,10 @@
     @content;
   }
 }
+
+@mixin round-card ($width, $height, $bdrs: 8px, $bgcolor: $color-grey) {
+  width: $width;
+  height: $height;
+  border-radius: $bdrs;
+  background-color: $bgcolor;
+}
