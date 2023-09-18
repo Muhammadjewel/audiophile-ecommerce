@@ -408,9 +408,16 @@ select:-webkit-autofill:focus {
 .product-info--center {
   text-align: center;
 }
+@media only screen and (min-width: 62em) {
+  .product-info--center {
+    text-align: left;
+  }
+}
+.product-info--white {
+  color: #ffffff;
+}
 
 .product-info__title {
-  margin-bottom: 24px;
   font-size: 1.75rem;
   font-weight: 700;
   line-height: normal;
@@ -421,10 +428,49 @@ select:-webkit-autofill:focus {
 .product-info--white .product-info__title {
   color: #ffffff;
 }
+.product-info--hero .product-info__title {
+  margin-bottom: 24px;
+  font-size: 2.25rem;
+  line-height: 111.111%;
+  letter-spacing: 0.08038rem;
+}
+@media only screen and (min-width: 40em) {
+  .product-info--hero .product-info__title {
+    font-size: 3.5rem;
+    line-height: 103.571%;
+    letter-spacing: 0.125rem;
+  }
+}
+.product-info--category-page .product-info__title {
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 40em) {
+  .product-info--category-page .product-info__title {
+    margin-bottom: 32px;
+    font-size: 2.5rem;
+    line-height: 110%;
+    letter-spacing: 0.08931rem;
+  }
+}
+.product-info--product-page .product-info__title {
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 40em) {
+  .product-info--product-page .product-info__title {
+    margin-bottom: 32px;
+    line-height: 114.286%;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .product-info--product-page .product-info__title {
+    font-size: 2.5rem;
+    line-height: 110%;
+    letter-spacing: 0.08931rem;
+  }
+}
 
 .product-info__new {
   order: -1;
-  margin-bottom: 24px;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: normal;
@@ -433,29 +479,56 @@ select:-webkit-autofill:focus {
   text-transform: uppercase;
 }
 .product-info--white .product-info__new {
-  color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
 }
-
-.product-info__text {
+.product-info--hero .product-info__new {
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 40em) {
+  .product-info--hero .product-info__new {
+    margin-bottom: 24px;
+  }
+}
+.product-info--category-page .product-info__new {
   margin-bottom: 24px;
 }
-.product-info--white .product-info__text {
-  color: rgba(255, 255, 255, 0.75);
+@media only screen and (min-width: 40em) {
+  .product-info--category-page .product-info__new {
+    margin-bottom: 16px;
+  }
+}
+.product-info--product-page .product-info__new {
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 40em) {
+  .product-info--product-page .product-info__new {
+    margin-bottom: 16px;
+  }
 }
 
-.product-info__price-wrapper {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 32px;
+.product-info--hero .product-info__text {
+  margin-bottom: 28px;
 }
-
-.product-info__price {
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.08038rem;
-  color: #000000;
-  text-transform: uppercase;
+@media only screen and (min-width: 40em) {
+  .product-info--hero .product-info__text {
+    margin-bottom: 40px;
+  }
+}
+.product-info--category-page .product-info__text {
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 62em) {
+  .product-info--category-page .product-info__text {
+    margin-bottom: 32px;
+  }
+}
+.product-info--product-page .product-info__text {
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 40em) {
+  .product-info--product-page .product-info__text {
+    margin-bottom: 32px;
+  }
 }
 
 .product-info__actions {
@@ -465,6 +538,33 @@ select:-webkit-autofill:focus {
 }
 .product-info--center .product-info__actions {
   justify-content: center;
+}
+@media only screen and (min-width: 62em) {
+  .product-info--center .product-info__actions {
+    justify-content: flex-start;
+  }
+}
+
+.product-info__price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 62em) {
+  .product-info__price-wrapper {
+    margin-bottom: 48px;
+  }
+}
+
+.product-info__price {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.08038rem;
+  color: var(--color-black);
+  text-transform: uppercase;
 }
 
 .mission {
