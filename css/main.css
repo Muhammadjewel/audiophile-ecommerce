@@ -567,6 +567,112 @@ select:-webkit-autofill:focus {
   text-transform: uppercase;
 }
 
+.product {
+  display: grid;
+  align-items: center;
+}
+.product--category-page {
+  gap: 32px;
+}
+@media only screen and (min-width: 40em) {
+  .product--category-page {
+    gap: 42px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .product--category-page {
+    grid-template-columns: 1fr 27.8125rem;
+    gap: 64px;
+  }
+}
+@media only screen and (min-width: 74.375em) {
+  .product--category-page {
+    gap: 125px;
+  }
+}
+.product--product-page {
+  gap: 32px;
+}
+@media only screen and (min-width: 40em) {
+  .product--product-page {
+    grid-template-columns: 16.9375rem 1fr;
+    gap: 70px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .product--product-page {
+    grid-template-columns: 1fr 27.8125rem;
+    gap: 64px;
+  }
+}
+@media only screen and (min-width: 74.375em) {
+  .product--product-page {
+    gap: 125px;
+  }
+}
+
+.product__img-wrapper {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+.product--category-page .product__img-wrapper {
+  width: 100%;
+  height: 352px;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+}
+@media only screen and (min-width: 62em) {
+  .product--category-page .product__img-wrapper {
+    height: 560px;
+  }
+}
+.product--category-page .product__img-wrapper::after {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  bottom: 51px;
+  transform: translateX(-50%);
+  width: 165px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--color-black);
+  opacity: 0.1521;
+  content: "";
+  filter: blur(21.7462539673px);
+}
+@media only screen and (min-width: 62em) {
+  .product--category-page .product__img-wrapper::after {
+    width: 262px;
+    height: 56px;
+    bottom: 81px;
+  }
+}
+.product--product-page .product__img-wrapper {
+  width: 100%;
+  height: 327px;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+}
+@media only screen and (min-width: 40em) {
+  .product--product-page .product__img-wrapper {
+    height: 480px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .product--product-page .product__img-wrapper {
+    height: 560px;
+  }
+}
+
+.product--category-page .product__product-info {
+  max-width: 35.75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mission {
   padding-top: 120px;
   padding-bottom: 120px;
