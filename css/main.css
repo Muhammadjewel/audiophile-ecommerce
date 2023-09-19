@@ -729,6 +729,34 @@ select:-webkit-autofill:focus {
   margin-right: auto;
 }
 
+.category-hero {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+@media only screen and (min-width: 40em) {
+  .category-hero {
+    padding-top: 104px;
+    padding-bottom: 96px;
+  }
+}
+
+.category-hero__title {
+  font-size: 1.75rem;
+  line-height: normal;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 40em) {
+  .category-hero__title {
+    font-size: 2.5rem;
+    line-height: 110%;
+    letter-spacing: 0.08931rem;
+  }
+}
+
 .mission {
   padding-top: 120px;
   padding-bottom: 120px;
