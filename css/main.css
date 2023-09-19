@@ -757,6 +757,34 @@ select:-webkit-autofill:focus {
   }
 }
 
+.category-products {
+  padding-top: 64px;
+  padding-bottom: 120px;
+}
+@media only screen and (min-width: 40em) {
+  .category-products {
+    padding-top: 120px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .category-products {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+}
+
+.category-products__list {
+  display: grid;
+  gap: 120px;
+  padding: 0;
+  list-style: none;
+}
+@media only screen and (min-width: 62em) {
+  .category-products__list {
+    gap: 160px;
+  }
+}
+
 .mission {
   padding-top: 120px;
   padding-bottom: 120px;
