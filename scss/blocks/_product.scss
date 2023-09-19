@@ -12,6 +12,10 @@
     @include breakpoint-up(62em) {
       grid-template-columns: 1fr 27.8125rem;
       gap: 64px;
+
+      &:nth-child(even) {
+        grid-template-columns: 27.8125rem 1fr;
+      }
     }
 
     @include breakpoint-up (74.375em) {
@@ -64,6 +68,12 @@
         height: 56px;
         bottom: 81px;
       }
+    }
+  }
+
+  .product--category-page:nth-child(even) & {
+    @include breakpoint-up (62em) {
+      order: 1;
     }
   }
 

@@ -584,6 +584,9 @@ select:-webkit-autofill:focus {
     grid-template-columns: 1fr 27.8125rem;
     gap: 64px;
   }
+  .product--category-page:nth-child(even) {
+    grid-template-columns: 27.8125rem 1fr;
+  }
 }
 @media only screen and (min-width: 74.375em) {
   .product--category-page {
@@ -653,6 +656,11 @@ select:-webkit-autofill:focus {
     width: 262px;
     height: 56px;
     bottom: 81px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .product--category-page:nth-child(even) .product__img-wrapper {
+    order: 1;
   }
 }
 .product--product-page .product__img-wrapper {
