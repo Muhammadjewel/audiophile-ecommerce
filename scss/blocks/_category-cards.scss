@@ -1,0 +1,15 @@
+.category-cards__list {
+  display: grid;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+
+  @include breakpoint-up (40em) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  @include breakpoint-up (62em) {
+    gap: 30px;
+  }
+}
