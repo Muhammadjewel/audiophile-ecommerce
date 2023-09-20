@@ -33,6 +33,7 @@
 
   &--stretched::before {
     position: absolute;
+    z-index: 10;
     left: 0;
     top: 0;
     width: 100%;
