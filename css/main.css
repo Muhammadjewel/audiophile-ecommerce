@@ -571,6 +571,7 @@ select:-webkit-autofill:focus {
   display: grid;
   align-items: center;
 }
+
 .product--category-page {
   gap: 32px;
 }
@@ -593,6 +594,7 @@ select:-webkit-autofill:focus {
     gap: 125px;
   }
 }
+
 .product--product-page {
   gap: 32px;
 }
@@ -626,6 +628,7 @@ select:-webkit-autofill:focus {
   place-items: center;
   padding: 24px;
 }
+
 .product--category-page .product__img-wrapper {
   width: 100%;
   height: 352px;
@@ -658,11 +661,13 @@ select:-webkit-autofill:focus {
     bottom: 81px;
   }
 }
+
 @media only screen and (min-width: 62em) {
   .product--category-page:nth-child(even) .product__img-wrapper {
     order: 1;
   }
 }
+
 .product--product-page .product__img-wrapper {
   width: 100%;
   height: 327px;
