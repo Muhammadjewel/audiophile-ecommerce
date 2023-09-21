@@ -1,0 +1,89 @@
+@use 'sass:color';
+
+.featured-product-circles {
+  display: grid;
+  justify-items: center;
+  padding: 56px 24px;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  background-image: url("../img/featured-product-circles-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 558px 558px;
+  background-position: center top -121px;
+  color: var(--color-white);
+  text-align: center;
+  overflow: hidden;
+
+  @include breakpoint-up (40em) {
+    padding: 52px 64px 64px;
+    background-size: 944px 944px;
+    background-position: center top -288px;
+  }
+
+  @include breakpoint-up (62em) {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    height: 560px;
+    padding: 24px 95px;
+    background-position: -149px -36px;
+    text-align: left;
+  }
+
+  *:focus {
+    outline-color: var(--color-white);
+  }
+}
+
+.featured-product-circles__img {
+  width: 207px;
+  height: 207px;
+  object-fit: contain;
+  margin-bottom: 32px;
+
+  @include breakpoint-up (40em) {
+    width: 237px;
+    height: 237px;
+    margin-bottom: 64px;
+  }
+
+  @include breakpoint-up (62em) {
+    width: 493px;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  @include breakpoint-up (74.375em) {
+    margin-bottom: -120px;
+  }
+}
+
+.featured-product-circles__content {
+  max-width: 21.875rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featured-product-circles__title {
+  margin-bottom: 24px;
+  font-size: 2.25rem;
+  line-height: 111.111%;
+  letter-spacing: 0.08038rem;
+  text-transform: uppercase;
+
+  @include breakpoint-up (40em) {
+    font-size: 3.5rem;
+    line-height: 103.571%;
+    letter-spacing: 0.125rem;
+  }
+}
+
+.featured-product-circles__text {
+  margin-bottom: 24px;
+  color: color.scale($color-white, $alpha: -25%);
+
+  @include breakpoint-up (40em) {
+    margin-bottom: 40px;
+  }
+}

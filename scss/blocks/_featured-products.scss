@@ -1,0 +1,17 @@
+.featured-products {
+}
+
+.featured-products__list {
+  display: grid;
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+
+  @include breakpoint-up (40em) {
+    gap: 32px;
+  }
+
+  @include breakpoint-up (62em) {
+    gap: 48px;
+  }
+}
