@@ -896,6 +896,102 @@ select:-webkit-autofill:focus {
   }
 }
 
+.product-features__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05356rem;
+  color: var(--color-black);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 40em) {
+  .product-features__heading {
+    font-size: 2rem;
+    line-height: 112.5%;
+    letter-spacing: 0.07144rem;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .product-features__heading {
+    margin-bottom: 32px;
+  }
+}
+
+.product-features p + p {
+  margin-top: 20px;
+}
+
+.product-contents {
+  display: grid;
+  gap: 24px 12px;
+}
+@media only screen and (min-width: 40em) {
+  .product-contents {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 62em) {
+  .product-contents {
+    grid-template-columns: none;
+    gap: 32px;
+  }
+}
+
+.product-contents__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05356rem;
+  color: var(--color-black);
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 40em) {
+  .product-contents__heading {
+    font-size: 2rem;
+    line-height: 112.5%;
+    letter-spacing: 0.07144rem;
+  }
+}
+
+.product-contents__list {
+  display: grid;
+  gap: 8px;
+}
+
+.product-contents__item {
+  display: flex;
+  gap: 20px;
+}
+
+.product-contents__item-title {
+  order: 1;
+  flex-grow: 1;
+}
+
+.product-contents__item-value {
+  min-width: 20px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.product-features-contents__container {
+  display: grid;
+  gap: 88px;
+  align-items: start;
+}
+@media only screen and (min-width: 40em) {
+  .product-features-contents__container {
+    gap: 120px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .product-features-contents__container {
+    grid-template-columns: 1fr 21.875rem;
+    gap: 125px;
+  }
+}
+
 .similar-products {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -914,7 +1010,6 @@ select:-webkit-autofill:focus {
   line-height: 1.5;
   letter-spacing: 0.05356rem;
   color: var(--color-black);
-  text-align: center;
   text-transform: uppercase;
   margin-bottom: 40px;
 }

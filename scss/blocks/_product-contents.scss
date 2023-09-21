@@ -1,0 +1,38 @@
+.product-contents {
+  display: grid;
+  gap: 24px 12px;
+
+  @include breakpoint-up (40em) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint-up (62em) {
+    grid-template-columns: none;
+    gap: 32px;
+  }
+}
+
+.product-contents__heading {
+  @include page-section-heading;
+}
+
+.product-contents__list {
+  display: grid;
+  gap: 8px;
+}
+
+.product-contents__item {
+  display: flex;
+  gap: 20px;
+}
+
+.product-contents__item-title {
+  order: 1;
+  flex-grow: 1;
+}
+
+.product-contents__item-value {
+  min-width: 20px;
+  font-weight: bold;
+  color: var(--color-primary);
+}

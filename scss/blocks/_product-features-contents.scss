@@ -1,0 +1,17 @@
+.product-features-contents {
+}
+
+.product-features-contents__container {
+  display: grid;
+  gap: 88px;
+  align-items: start;
+
+  @include breakpoint-up (40em) {
+    gap: 120px;
+  }
+
+  @include breakpoint-up (62em) {
+    grid-template-columns: 1fr 21.875rem;
+    gap: 125px;
+  }
+}

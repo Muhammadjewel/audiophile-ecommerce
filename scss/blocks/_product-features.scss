@@ -1,0 +1,12 @@
+.product-features__heading {
+  @include page-section-heading;
+  margin-bottom: 24px;
+
+  @include breakpoint-up (62em) {
+    margin-bottom: 32px;
+  }
+}
+
+.product-features p + p {
+  margin-top: 20px;
+}
