@@ -1,0 +1,54 @@
+@use 'sass:color';
+
+.product-cart-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.product-cart-card__img-wrapper {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  @include round-card($width: 64px, $height: 64px);
+}
+
+.product-cart-card__img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.product-cart-card__info {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  gap: 0 8px;
+  align-items: center;
+}
+
+.product-cart-card__title {
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 166.667%;
+  color: var(--color-black);
+  text-transform: uppercase;
+}
+
+.product-cart-card__price {
+  color: color.scale($color-black, $alpha: -50%);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 178.571%;
+}
+
+.product-cart-card__count {
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+
+  &--summary {
+    align-self: baseline;
+  }
+}
