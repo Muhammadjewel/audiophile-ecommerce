@@ -4,13 +4,26 @@ function init () {
 
   // Header
   const elHeader = document.querySelector('.header');
-  const elHeaderMenuToggler = elHeader.querySelector('.header__menu-toggler');
+  const elsHeaderToggler = elHeader.querySelectorAll('.header__toggler');
 
-  if (elHeaderMenuToggler) {
-    elHeaderMenuToggler.addEventListener('click', function () {
-      elHeader.classList.toggle('header--menu-open');
+  // Click outside
+  // Esc keyup
+
+  elsHeaderToggler.forEach(function (elHeaderToggler) {
+    elHeaderToggler.addEventListener('click', function () {
+      const target = elHeaderToggler.dataset.target;
+
+      if (target === 'menu') {
+        elHeader.classList.toggle('header--menu-open');
+        elHeader.classList.remove('header--cart-open');
+      }
+
+      if (target === 'cart') {
+        elHeader.classList.toggle('header--cart-open');
+        elHeader.classList.remove('header--menu-open');
+      }
     });
-  }
+  });
 
   // Number controls
   const elNumberControlsDecrementButton =  document.querySelectorAll('.number-controls__button--decrement');
