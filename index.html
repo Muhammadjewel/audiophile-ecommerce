@@ -11,87 +11,145 @@
 </head>
 <body>
 
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__container container">
+      <!-- HEADER MENU -->
+      <div class="header__menu">
+        <button class="header__menu-toggler" type="button" aria-label="Toogle categories menu">
+          <svg class="header__menu-toggler-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z"/></g></svg>
+        </button>
 
-  <!-- SITENAV -->
-  <nav class="sitenav">
-    <ul class="sitenav__list" role="list">
-      <li class="sitenav__item sitenav__item--active" role="listitem">
-        <a class="sitenav__link" href="#">Home</a>
-      </li>
-      <li class="sitenav__item" role="listitem">
-        <a class="sitenav__link" href="#">Headphones</a>
-      </li>
-      <li class="sitenav__item" role="listitem">
-        <a class="sitenav__link" href="#">Speakers</a>
-      </li>
-      <li class="sitenav__item" role="listitem">
-        <a class="sitenav__link" href="#">Earphones</a>
-      </li>
-    </ul>
-  </nav>
-
-
-  <!-- CART-CARD -->
-  <section class="cart-card">
-    <header class="cart-card__header">
-      <h2 class="cart-card__heading">Cart (3)</h2>
-      <button class="cart-card__remove-items-button" type="button">Remove all</button>
-    </header>
-    <div class="cart-card__inner">
-      <ul class="cart-card__products" role="list">
-        <li class="cart-card__product product-cart-card" role="listitem">
-          <div class="product-cart-card__img-wrapper">
-            <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
-          </div>
-
-          <div class="product-cart-card__info">
-            <h3 class="product-cart-card__title">XX99 MK II</h3>
-            <p class="product-cart-card__price">$ 2,999</p>
-            <div class="product-cart-card__count">
-              <div class="number-controls number-controls--small" data-item-count="1">
-                <p class="number-controls__count">
-                  <span class="visually-hidden">Count</span>
-                  <span class="number-controls__count-value">1</span>
-                </p>
-                <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
-                <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
-              </div>
+        <div class="header__menu-inner">
+          <div class="container">
+            <!-- CATEGORY-CARDS -->
+            <div class="category-cards">
+              <h2 class="visually-hidden">Product categories</h2>
+              <ul class="category-cards__list" role="list">
+                <li class="category-cards__item category-card" role="listitem">
+                  <h3 class="category-card__title">Headphones</h3>
+                  <img class="category-card__img" src="img/category-img-headphones.png" alt="Headphone sample" width="103" height="104" srcset="img/category-img-headphones.png 1x, img/category-img-headphones@2x.png 2x">
+                  <a href="category-headphones.html" class="arrow-link arrow-link--stretched">Shop</a>
+                </li>
+                <li class="category-cards__item category-card" role="listitem">
+                  <h3 class="category-card__title">Speakers</h3>
+                  <img class="category-card__img" src="img/category-img-speakers.png" alt="Speaker sample" width="103" height="104" srcset="img/category-img-speakers.png 1x, img/category-img-speakers@2x.png 2x">
+                  <a href="category-speakers.html" class="arrow-link arrow-link--stretched">Shop</a>
+                </li>
+                <li class="category-cards__item category-card" role="listitem">
+                  <h3 class="category-card__title">Earphones</h3>
+                  <img class="category-card__img" src="img/category-img-earphones.png" alt="Earphone sample" width="103" height="104" srcset="img/category-img-earphones.png 1x, img/category-img-earphones@2x.png 2x">
+                  <a href="category-earphones.html" class="arrow-link arrow-link--stretched">Shop</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </li>
-
-        <li class="cart-card__product product-cart-card" role="listitem">
-          <div class="product-cart-card__img-wrapper">
-            <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
-          </div>
-
-          <div class="product-cart-card__info">
-            <h3 class="product-cart-card__title">XX99 MK II</h3>
-            <p class="product-cart-card__price">$ 2,999</p>
-            <div class="product-cart-card__count">
-              <div class="number-controls number-controls--small" data-item-count="1">
-                <p class="number-controls__count">
-                  <span class="visually-hidden">Count</span>
-                  <span class="number-controls__count-value">1</span>
-                </p>
-                <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
-                <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-
-      <dl class="cart-card__summary cart-card__summary--checkout-page cart-card-summary">
-        <div class="cart-card-summary__item">
-          <dt class="cart-card-summary__title">Total</dt>
-          <dd class="cart-card-summary__value">$ 5,396</dd>
         </div>
-      </dl>
+      </div>
 
-      <a class="button button--primary button--block" href="checkout.html">Checkout</a>
+      <!-- LOGO -->
+      <a class="header__logo logo" href="index.html" aria-label="Go to home page">
+        <img class="logo__img" src="img/logo.svg" alt="Audiophile logo" width="143" height="25">
+      </a>
+
+      <!-- SITENAV -->
+      <nav class="header__sitenav sitenav">
+        <ul class="sitenav__list" role="list">
+          <li class="sitenav__item sitenav__item--active" role="listitem">
+            <a class="sitenav__link" href="#">Home</a>
+          </li>
+          <li class="sitenav__item" role="listitem">
+            <a class="sitenav__link" href="#">Headphones</a>
+          </li>
+          <li class="sitenav__item" role="listitem">
+            <a class="sitenav__link" href="#">Speakers</a>
+          </li>
+          <li class="sitenav__item" role="listitem">
+            <a class="sitenav__link" href="#">Earphones</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- HEADER CART -->
+      <div class="header__cart">
+        <button class="header__cart-toggler" type="button" aria-label="Toogle shopping cart">
+          <svg class="header__cart-icon" xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M7.411 13.195a.667.667 0 0 0-.673.66c0 .363.303.659.674.659h12.219c.372 0 .674.295.674.66 0 .364-.302.66-.674.66H7.412c-1.114 0-2.021-.889-2.021-1.98 0-.812.502-1.511 1.218-1.816L4.176 1.32H.674A.667.667 0 0 1 0 .66C0 .296.302 0 .674 0h4.043c.316 0 .59.215.658.517l.481 2.122h16.47c.212 0 .41.097.538.262.127.166.168.38.11.579l-2.695 9.236a.672.672 0 0 1-.648.478H7.41Zm1.214 2.638c1.132 0 2.054.935 2.054 2.084 0 1.148-.922 2.083-2.054 2.083-1.132 0-2.054-.935-2.054-2.083 0-1.15.922-2.084 2.054-2.084Zm9.857 0c1.133 0 2.054.935 2.054 2.084 0 1.148-.922 2.083-2.054 2.083-1.132 0-2.053-.935-2.053-2.083 0-1.15.92-2.084 2.053-2.084Zm.64-3.958 2.31-7.917H6.157l1.797 7.917h11.17ZM9.31 17.917a.69.69 0 0 0-.685-.695.69.69 0 0 0-.685.695.69.69 0 0 0 .685.694.69.69 0 0 0 .685-.694Zm9.172-.695a.69.69 0 0 1 .685.695.69.69 0 0 1-.685.694.69.69 0 0 1-.684-.694.69.69 0 0 1 .684-.695Z" clip-rule="evenodd"/></svg>
+        </button>
+
+        <div class="header__cart-inner">
+          <!-- CART-CARD -->
+          <section class="cart-card">
+            <header class="cart-card__header">
+              <h2 class="cart-card__heading">Cart (3)</h2>
+              <button class="cart-card__remove-items-button" type="button">Remove all</button>
+            </header>
+            <div class="cart-card__inner">
+              <ul class="cart-card__products" role="list">
+                <li class="cart-card__product product-cart-card" role="listitem">
+                  <div class="product-cart-card__img-wrapper">
+                    <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
+                  </div>
+
+                  <div class="product-cart-card__info">
+                    <h3 class="product-cart-card__title">XX99 MK II</h3>
+                    <p class="product-cart-card__price">$ 2,999</p>
+                    <div class="product-cart-card__count">
+                      <div class="number-controls number-controls--small" data-item-count="1">
+                        <p class="number-controls__count">
+                          <span class="visually-hidden">Count</span>
+                          <span class="number-controls__count-value">1</span>
+                        </p>
+                        <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
+                        <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="cart-card__product product-cart-card" role="listitem">
+                  <div class="product-cart-card__img-wrapper">
+                    <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
+                  </div>
+
+                  <div class="product-cart-card__info">
+                    <h3 class="product-cart-card__title">XX99 MK II</h3>
+                    <p class="product-cart-card__price">$ 2,999</p>
+                    <div class="product-cart-card__count">
+                      <div class="number-controls number-controls--small" data-item-count="1">
+                        <p class="number-controls__count">
+                          <span class="visually-hidden">Count</span>
+                          <span class="number-controls__count-value">1</span>
+                        </p>
+                        <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
+                        <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <dl class="cart-card__summary cart-card__summary--checkout-page cart-card-summary">
+                <div class="cart-card-summary__item">
+                  <dt class="cart-card-summary__title">Total</dt>
+                  <dd class="cart-card-summary__value">$ 5,396</dd>
+                </div>
+              </dl>
+
+              <a class="button button--primary button--block" href="checkout.html">Checkout</a>
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
-  </section>
+  </header>
+
+  <div class="container">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, cupiditate molestias neque quasi praesentium hic dolore architecto dolores tempora tempore, deleniti saepe ut? Nesciunt facilis error aliquid pariatur. Deleniti ea, sapiente distinctio quaerat iure impedit modi architecto est, id eos, atque nulla quas saepe porro adipisci corporis officiis vitae. Voluptatibus.</p>
+    <p>Temporibus inventore commodi et fugiat itaque ad assumenda, ab ex amet aperiam corrupti dolores numquam repellat illo consectetur provident id asperiores expedita voluptas libero voluptatem accusamus velit! Alias blanditiis officia beatae perspiciatis. Cumque similique ullam sequi esse veritatis assumenda enim! Voluptate libero ullam quo tempore placeat aut doloremque excepturi reprehenderit.</p>
+    <p>Voluptatum dolorem porro soluta a suscipit aspernatur obcaecati reprehenderit eveniet rerum minus in laudantium, non commodi eos! Doloribus sint praesentium ratione aspernatur ipsa, nemo et quae nobis exercitationem vitae, temporibus fugit ad. Dolorem, accusantium aut vero nam explicabo est mollitia, eligendi itaque porro ex tempora optio, a veritatis quisquam saepe.</p>
+    <p>Qui laboriosam dignissimos repellat! Libero molestiae illo nihil explicabo a nobis nulla et saepe quasi, reiciendis, animi sunt debitis autem commodi perspiciatis veniam voluptatem labore ipsum aliquid molestias aliquam. Eius, debitis quidem. Nisi ea rem, mollitia explicabo a fugit earum quibusdam asperiores accusamus debitis odit quia quo cupiditate et quis?</p>
+    <p>Suscipit provident cupiditate a itaque consectetur illum cumque officia. Et tempora quas rem, magni amet ab deserunt ad, voluptatum accusamus obcaecati eaque quisquam unde adipisci laboriosam voluptas, optio illum! Aperiam deleniti iusto, nemo sed impedit eius, labore enim natus asperiores porro dolore magni autem ullam ipsam earum recusandae, eum quaerat.</p>
+  </div>
 
 
   <!-- CATEGORY-CARDS -->
