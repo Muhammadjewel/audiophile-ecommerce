@@ -1079,7 +1079,7 @@ select:-webkit-autofill:focus {
 }
 @media only screen and (min-width: 40em) {
   .featured-product-cards__card {
-    height: 320px;
+    height: 100%;
     padding: 40px;
   }
 }
