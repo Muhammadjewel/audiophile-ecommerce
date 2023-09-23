@@ -58,7 +58,7 @@
   }
 }
 
-.header__menu-toggler {
+.header__toggler {
   display: block;
   border: 0;
   padding: 0;
@@ -72,10 +72,15 @@
   }
 }
 
-.header__menu-toggler-icon {
+.header__toggler-icon {
   display: block;
   width: 16px;
   height: 15px;
+
+  &--cart {
+    width: 23px;
+    height: 20px;
+  }
 }
 
 .header__menu-inner {
@@ -122,26 +127,6 @@
     justify-content: flex-end;
     min-width: 143px;
   }
-}
-
-.header__cart-toggler {
-  display: block;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  color: var(--color-white);
-  cursor: pointer;
-  @include transition(color);
-
-  &:hover {
-    color: var(--color-primary);
-  }
-}
-
-.header__cart-toggler-icon {
-  display: block;
-  width: 23px;
-  height: 20px;
 }
 
 .header__cart-inner {
