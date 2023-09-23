@@ -13,6 +13,11 @@
     width: 100%;
   }
 
+  &--menu-open,
+  &--cart-open {
+    z-index: 99;
+  }
+
   &::after {
     position: absolute;
     left: 0;
