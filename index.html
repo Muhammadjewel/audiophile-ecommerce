@@ -9,322 +9,112 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/main.min.css">
 </head>
-<body style="padding: 32px 0; gap: 24px;">
-
-  <div class="container">
-    <h1>UI elements</h1>
-  </div>
-
-
-  <!-- BUTTON -->
-  <section class="container">
-    <h2>Button</h2>
-    <div style="display: grid; gap: 24px; justify-items: start;">
-      <a class="button" href="#">Button</a>
-      <a class="button button--block" href="#">Button block</a>
-      <a class="button button--primary" href="#">Button</a>
-      <a class="button button--primary button--block" href="#">Button block</a>
-      <a class="button button--outline" href="#">Button</a>
-      <a class="button button--outline button--block" href="#">Button block</a>
-    </div>
-  </section>
-
-
-  <!-- ARROW LINK -->
-  <section class="container">
-    <h2>Arrow link</h2>
-    <div style="display: grid; gap: 24px; justify-items: start;">
-      <a class="arrow-link" href="#">Shop</a>
-
-      <div style="width: 200px; height: 100px; position: relative; border: 1px solid #000;">
-        <a class="arrow-link arrow-link--stretched" href="#">Shop stretched</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- BACK LINK -->
-  <section class="container">
-    <h2>Back link</h2>
-    <div style="display: grid; gap: 24px; justify-items: start;">
-      <a class="back-link" href="#">Go Back</a>
-    </div>
-  </section>
-
-
-  <!-- NUMBER CONTROLS -->
-  <section class="container">
-    <h2>Number controls</h2>
-    <div style="display: grid; gap: 24px; justify-items: start;">
-      <div class="number-controls" data-item-count="1">
-        <p class="number-controls__count">
-          <span class="visually-hidden">Count</span>
-          <span class="number-controls__count-value">1</span>
-        </p>
-        <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
-        <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
-      </div>
-
-      <div class="number-controls number-controls--small" data-item-count="1">
-        <p class="number-controls__count">
-          <span class="visually-hidden">Count</span>
-          <span class="number-controls__count-value">1</span>
-        </p>
-        <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
-        <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
-      </div>
-    </div>
-  </section>
+<body>
 
 
   <!-- SITENAV -->
-  <section class="container">
-    <h2>Sitenav</h2>
-    <div style="background-color: var(--color-black); color: var(--color-white); padding: 24px;">
-      <nav class="sitenav">
-        <ul class="sitenav__list" role="list">
-          <li class="sitenav__item sitenav__item--active" role="listitem">
-            <a class="sitenav__link" href="#">Home</a>
-          </li>
-          <li class="sitenav__item" role="listitem">
-            <a class="sitenav__link" href="#">Headphones</a>
-          </li>
-          <li class="sitenav__item" role="listitem">
-            <a class="sitenav__link" href="#">Speakers</a>
-          </li>
-          <li class="sitenav__item" role="listitem">
-            <a class="sitenav__link" href="#">Earphones</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
+  <nav class="sitenav">
+    <ul class="sitenav__list" role="list">
+      <li class="sitenav__item sitenav__item--active" role="listitem">
+        <a class="sitenav__link" href="#">Home</a>
+      </li>
+      <li class="sitenav__item" role="listitem">
+        <a class="sitenav__link" href="#">Headphones</a>
+      </li>
+      <li class="sitenav__item" role="listitem">
+        <a class="sitenav__link" href="#">Speakers</a>
+      </li>
+      <li class="sitenav__item" role="listitem">
+        <a class="sitenav__link" href="#">Earphones</a>
+      </li>
+    </ul>
+  </nav>
 
 
   <!-- CART-CARD -->
-  <section class="container">
-    <h2>Cart card</h2>
-    <div style="display: grid; gap: 32px;">
-      <section class="cart-card">
-        <header class="cart-card__header">
-          <h2 class="cart-card__heading">Cart (3)</h2>
-          <button class="cart-card__remove-items-button" type="button">Remove all</button>
-        </header>
-        <div class="cart-card__inner">
-          <ul class="cart-card__products" role="list">
-            <li class="cart-card__product product-cart-card" role="listitem">
-              <div class="product-cart-card__img-wrapper">
-                <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
-              </div>
+  <section class="cart-card">
+    <header class="cart-card__header">
+      <h2 class="cart-card__heading">Cart (3)</h2>
+      <button class="cart-card__remove-items-button" type="button">Remove all</button>
+    </header>
+    <div class="cart-card__inner">
+      <ul class="cart-card__products" role="list">
+        <li class="cart-card__product product-cart-card" role="listitem">
+          <div class="product-cart-card__img-wrapper">
+            <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
+          </div>
 
-              <div class="product-cart-card__info">
-                <h3 class="product-cart-card__title">XX99 MK II</h3>
-                <p class="product-cart-card__price">$ 2,999</p>
-                <div class="product-cart-card__count">
-                  <div class="number-controls number-controls--small" data-item-count="1">
-                    <p class="number-controls__count">
-                      <span class="visually-hidden">Count</span>
-                      <span class="number-controls__count-value">1</span>
-                    </p>
-                    <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
-                    <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
-                  </div>
-                </div>
+          <div class="product-cart-card__info">
+            <h3 class="product-cart-card__title">XX99 MK II</h3>
+            <p class="product-cart-card__price">$ 2,999</p>
+            <div class="product-cart-card__count">
+              <div class="number-controls number-controls--small" data-item-count="1">
+                <p class="number-controls__count">
+                  <span class="visually-hidden">Count</span>
+                  <span class="number-controls__count-value">1</span>
+                </p>
+                <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
+                <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
               </div>
-            </li>
-
-            <li class="cart-card__product product-cart-card" role="listitem">
-              <div class="product-cart-card__img-wrapper">
-                <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
-              </div>
-
-              <div class="product-cart-card__info">
-                <h3 class="product-cart-card__title">XX99 MK II</h3>
-                <p class="product-cart-card__price">$ 2,999</p>
-                <div class="product-cart-card__count">
-                  <div class="number-controls number-controls--small" data-item-count="1">
-                    <p class="number-controls__count">
-                      <span class="visually-hidden">Count</span>
-                      <span class="number-controls__count-value">1</span>
-                    </p>
-                    <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
-                    <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <dl class="cart-card__summary cart-card__summary--checkout-page cart-card-summary">
-            <div class="cart-card-summary__item">
-              <dt class="cart-card-summary__title">Total</dt>
-              <dd class="cart-card-summary__value">$ 5,396</dd>
             </div>
-          </dl>
+          </div>
+        </li>
 
-          <a class="button button--primary button--block" href="checkout.html">Checkout</a>
+        <li class="cart-card__product product-cart-card" role="listitem">
+          <div class="product-cart-card__img-wrapper">
+            <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
+          </div>
+
+          <div class="product-cart-card__info">
+            <h3 class="product-cart-card__title">XX99 MK II</h3>
+            <p class="product-cart-card__price">$ 2,999</p>
+            <div class="product-cart-card__count">
+              <div class="number-controls number-controls--small" data-item-count="1">
+                <p class="number-controls__count">
+                  <span class="visually-hidden">Count</span>
+                  <span class="number-controls__count-value">1</span>
+                </p>
+                <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
+                <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <dl class="cart-card__summary cart-card__summary--checkout-page cart-card-summary">
+        <div class="cart-card-summary__item">
+          <dt class="cart-card-summary__title">Total</dt>
+          <dd class="cart-card-summary__value">$ 5,396</dd>
         </div>
-      </section>
+      </dl>
 
-      <section class="cart-card cart-card--empty">
-        <header class="cart-card__header">
-          <h2 class="cart-card__heading">Cart</h2>
-          <button class="cart-card__remove-items-button" type="button">Remove all</button>
-        </header>
-        <div class="cart-card__inner">
-          <ul class="cart-card__products" role="list">
-            <li class="cart-card__product product-cart-card" role="listitem">
-              <div class="product-cart-card__img-wrapper">
-                <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
-              </div>
-
-              <div class="product-cart-card__info">
-                <h3 class="product-cart-card__title">XX99 MK II</h3>
-                <p class="product-cart-card__price">$ 2,999</p>
-                <div class="product-cart-card__count">
-                  <div class="number-controls number-controls--small" data-item-count="1">
-                    <p class="number-controls__count">
-                      <span class="visually-hidden">Count</span>
-                      <span class="number-controls__count-value">1</span>
-                    </p>
-                    <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
-                    <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li class="cart-card__product product-cart-card" role="listitem">
-              <div class="product-cart-card__img-wrapper">
-                <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
-              </div>
-
-              <div class="product-cart-card__info">
-                <h3 class="product-cart-card__title">XX99 MK II</h3>
-                <p class="product-cart-card__price">$ 2,999</p>
-                <div class="product-cart-card__count">
-                  <div class="number-controls number-controls--small" data-item-count="1">
-                    <p class="number-controls__count">
-                      <span class="visually-hidden">Count</span>
-                      <span class="number-controls__count-value">1</span>
-                    </p>
-                    <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
-                    <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <dl class="cart-card__summary cart-card__summary--checkout-page cart-card-summary">
-            <div class="cart-card-summary__item">
-              <dt class="cart-card-summary__title">Total</dt>
-              <dd class="cart-card-summary__value">$ 5,396</dd>
-            </div>
-          </dl>
-
-          <a class="button button--primary button--block" href="checkout.html">Checkout</a>
-        </div>
-        <p class="cart-card__empty">Cart is empty.</p>
-      </section>
-
-      <section class="cart-card cart-card--checkout-page">
-        <header class="cart-card__header">
-          <h2 class="cart-card__heading">Summary</h2>
-          <button class="cart-card__remove-items-button" type="button">Remove all</button>
-        </header>
-        <div class="cart-card__inner">
-          <ul class="cart-card__products" role="list">
-            <li class="cart-card__product product-cart-card" role="listitem">
-              <div class="product-cart-card__img-wrapper">
-                <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
-              </div>
-
-              <div class="product-cart-card__info">
-                <h3 class="product-cart-card__title">XX99 MK II</h3>
-                <p class="product-cart-card__price">$ 2,999</p>
-                <div class="product-cart-card__count product-cart-card__count--summary">x1</div>
-              </div>
-            </li>
-
-            <li class="cart-card__product product-cart-card" role="listitem">
-              <div class="product-cart-card__img-wrapper">
-                <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
-              </div>
-
-              <div class="product-cart-card__info">
-                <h3 class="product-cart-card__title">XX99 MK II</h3>
-                <p class="product-cart-card__price">$ 2,999</p>
-                <div class="product-cart-card__count product-cart-card__count--summary">x1</div>
-              </div>
-            </li>
-
-            <li class="cart-card__product product-cart-card" role="listitem">
-              <div class="product-cart-card__img-wrapper">
-                <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
-              </div>
-
-              <div class="product-cart-card__info">
-                <h3 class="product-cart-card__title">XX99 MK II</h3>
-                <p class="product-cart-card__price">$ 2,999</p>
-                <div class="product-cart-card__count product-cart-card__count--summary">x1</div>
-              </div>
-            </li>
-          </ul>
-
-          <dl class="cart-card__summary cart-card__summary--checkout-page cart-card-summary">
-            <div class="cart-card-summary__item">
-              <dt class="cart-card-summary__title">Total</dt>
-              <dd class="cart-card-summary__value">$ 5,396</dd>
-            </div>
-            <div class="cart-card-summary__item">
-              <dt class="cart-card-summary__title">Shipping</dt>
-              <dd class="cart-card-summary__value">$ 50</dd>
-            </div>
-            <div class="cart-card-summary__item">
-              <dt class="cart-card-summary__title">VAT (Included)</dt>
-              <dd class="cart-card-summary__value">$ 1,079</dd>
-            </div>
-            <div class="cart-card-summary__item cart-card-summary__item--grand-total">
-              <dt class="cart-card-summary__title">Grand total</dt>
-              <dd class="cart-card-summary__value">$ 5,446</dd>
-            </div>
-          </dl>
-
-          <button class="button button--primary button--block" type="submit">Continue & pay</button>
-        </div>
-      </section>
-
+      <a class="button button--primary button--block" href="checkout.html">Checkout</a>
     </div>
   </section>
 
 
   <!-- CATEGORY-CARDS -->
-  <section class="container">
-    <h2>Category cards</h2>
-    <div>
-      <div class="category-cards">
-        <h2 class="visually-hidden">Product categories</h2>
-        <ul class="category-cards__list" role="list">
-          <li class="category-cards__item category-card" role="listitem">
-            <h3 class="category-card__title">Headphones</h3>
-            <img class="category-card__img" src="img/category-img-headphones.png" alt="Headphone sample" width="103" height="104" srcset="img/category-img-headphones.png 1x, img/category-img-headphones@2x.png 2x">
-            <a href="category-headphones.html" class="arrow-link arrow-link--stretched">Shop</a>
-          </li>
-          <li class="category-cards__item category-card" role="listitem">
-            <h3 class="category-card__title">Speakers</h3>
-            <img class="category-card__img" src="img/category-img-speakers.png" alt="Speaker sample" width="103" height="104" srcset="img/category-img-speakers.png 1x, img/category-img-speakers@2x.png 2x">
-            <a href="category-speakers.html" class="arrow-link arrow-link--stretched">Shop</a>
-          </li>
-          <li class="category-cards__item category-card" role="listitem">
-            <h3 class="category-card__title">Earphones</h3>
-            <img class="category-card__img" src="img/category-img-earphones.png" alt="Earphone sample" width="103" height="104" srcset="img/category-img-earphones.png 1x, img/category-img-earphones@2x.png 2x">
-            <a href="category-earphones.html" class="arrow-link arrow-link--stretched">Shop</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <div class="category-cards">
+    <h2 class="visually-hidden">Product categories</h2>
+    <ul class="category-cards__list" role="list">
+      <li class="category-cards__item category-card" role="listitem">
+        <h3 class="category-card__title">Headphones</h3>
+        <img class="category-card__img" src="img/category-img-headphones.png" alt="Headphone sample" width="103" height="104" srcset="img/category-img-headphones.png 1x, img/category-img-headphones@2x.png 2x">
+        <a href="category-headphones.html" class="arrow-link arrow-link--stretched">Shop</a>
+      </li>
+      <li class="category-cards__item category-card" role="listitem">
+        <h3 class="category-card__title">Speakers</h3>
+        <img class="category-card__img" src="img/category-img-speakers.png" alt="Speaker sample" width="103" height="104" srcset="img/category-img-speakers.png 1x, img/category-img-speakers@2x.png 2x">
+        <a href="category-speakers.html" class="arrow-link arrow-link--stretched">Shop</a>
+      </li>
+      <li class="category-cards__item category-card" role="listitem">
+        <h3 class="category-card__title">Earphones</h3>
+        <img class="category-card__img" src="img/category-img-earphones.png" alt="Earphone sample" width="103" height="104" srcset="img/category-img-earphones.png 1x, img/category-img-earphones@2x.png 2x">
+        <a href="category-earphones.html" class="arrow-link arrow-link--stretched">Shop</a>
+      </li>
+    </ul>
+  </div>
 
 
   <!-- FEATURED-PRODUCTS -->
@@ -371,282 +161,6 @@
     </div>
   </section>
 
-
-  <!-- PRODUCT FEATURES CONTENTS -->
-  <div class="product-features-contents">
-    <div class="product-features-contents__container container">
-      <section class="product-features-contents__features product-features">
-        <h2 class="product-features__heading">Features</h2>
-        <p>Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat.</p>
-        <p>The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hourbattery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic.</p>
-      </section>
-
-      <section class="product-features-contents__contents product-contents">
-        <h2 class="product-contents__heading">In the box</h2>
-        <dl class="product-contents__list">
-          <div class="product-contents__item">
-            <dt class="product-contents__item-title">Headphone Unit</dt>
-            <dd class="product-contents__item-value">1x</dd>
-          </div>
-          <div class="product-contents__item">
-            <dt class="product-contents__item-title">Replacement Earcups</dt>
-            <dd class="product-contents__item-value">2x</dd>
-          </div>
-          <div class="product-contents__item">
-            <dt class="product-contents__item-title">User Manual</dt>
-            <dd class="product-contents__item-value">1x</dd>
-          </div>
-          <div class="product-contents__item">
-            <dt class="product-contents__item-title">3.5mm 5m Audio Cable</dt>
-            <dd class="product-contents__item-value">1x</dd>
-          </div>
-          <div class="product-contents__item">
-            <dt class="product-contents__item-title">Travel Bag</dt>
-            <dd class="product-contents__item-value">1x</dd>
-          </div>
-        </dl>
-      </section>
-    </div>
-  </div>
-
-
-  <!-- PRODUCT IMAGES -->
-  <section class="product-images">
-    <div class="container">
-      <h2 class="visually-hidden">Product images</h2>
-      <ul class="product-images__grid" role="list">
-        <li class="product-images__item" role="listitem">
-          <picture class="product-images__picture">
-            <source srcset="img/product-images-xx99-mark2-1-desktop.jpg 1x, img/product-images-xx99-mark2-1-desktop@2x.jpg 2x" media="(min-width:62em)">
-            <img class="product-images__img" src="img/product-images-xx99-mark2-1-mobile.jpg" alt="Young man listening to music with headphones" width="327" height="141" srcset="img/product-images-xx99-mark2-1-mobile.jpg 1x, img/product-images-xx99-mark2-1-mobile@2x.jpg 2x">
-          </picture>
-        </li>
-
-        <li class="product-images__item" role="listitem">
-          <picture class="product-images__picture">
-            <source srcset="img/product-images-xx99-mark2-2-desktop.jpg 1x, img/product-images-xx99-mark2-2-desktop@2x.jpg 2x" media="(min-width:62em)">
-            <img class="product-images__img" src="img/product-images-xx99-mark2-2-mobile.jpg" alt="XX99 Mark 2 headphone on the table with other items" width="327" height="141" srcset="img/product-images-xx99-mark2-2-mobile.jpg 1x, img/product-images-xx99-mark2-2-mobile@2x.jpg 2x">
-          </picture>
-        </li>
-
-        <li class="product-images__item" role="listitem">
-          <picture class="product-images__picture">
-            <source srcset="img/product-images-xx99-mark2-3-desktop.jpg 1x, img/product-images-xx99-mark2-3-desktop@2x.jpg 2x" media="(min-width:62em)">
-            <source srcset="img/product-images-xx99-mark2-3-tablet.jpg 1x, img/product-images-xx99-mark2-3-tablet@2x.jpg 2x" media="(min-width:40em)">
-            <img class="product-images__img" src="img/product-images-xx99-mark2-3-mobile.jpg" alt="XX99 Mark 2 headphone on the table with other items" width="327" height="141" srcset="img/product-images-xx99-mark2-3-mobile.jpg 1x, img/product-images-xx99-mark2-3-mobile@2x.jpg 2x">
-          </picture>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-
-  <!-- SIMILAR-PRODUCTS -->
-  <section class="similar-products">
-    <div class="container">
-      <h2 class="similar-products__heading">You may also like</h2>
-      <ul class="similar-products__list" role="list">
-        <li class="similar-products__item" role="listitem">
-          <h3 class="similar-products__item-title">XX99 MARK I</h3>
-          <div class="similar-products__item-img-wrapper">
-            <picture class="similar-products__item-picture">
-              <source srcset="img/similar-item-xx99-mark1-tablet.png 1x, img/similar-item-xx99-mark1-tablet@2x.png 2x" media="(min-width:40em)">
-              <img class="similar-products__item-img" src="img/similar-item-xx99-mark1-mobile.png" alt="XX99 Mark 1" width="88" height="96" srcset="img/similar-item-xx99-mark1-mobile.png 1x, img/similar-item-xx99-mark1-mobile@2x.png 2x">
-            </picture>
-          </div>
-          <a class="button button--primary" href="#">See Product</a>
-        </li>
-
-        <li class="similar-products__item" role="listitem">
-          <h3 class="similar-products__item-title">XX59</h3>
-          <div class="similar-products__item-img-wrapper">
-            <picture class="similar-products__item-picture">
-              <source srcset="img/similar-item-xx59-tablet.png 1x, img/similar-item-xx59-tablet@2x.png 2x" media="(min-width:40em)">
-              <img class="similar-products__item-img" src="img/similar-item-xx59-mobile.png" alt="XX59" width="88" height="96" srcset="img/similar-item-xx59-mobile.png 1x, img/similar-item-xx59-mobile@2x.png 2x">
-            </picture>
-          </div>
-          <a class="button button--primary" href="#">See Product</a>
-        </li>
-
-        <li class="similar-products__item" role="listitem">
-          <h3 class="similar-products__item-title">ZX9 SPEAKER</h3>
-          <div class="similar-products__item-img-wrapper">
-            <picture class="similar-products__item-picture">
-              <source srcset="img/similar-item-zx9-tablet.png 1x, img/similar-item-zx9-tablet@2x.png 2x" media="(min-width:40em)">
-              <img class="similar-products__item-img" src="img/similar-item-zx9-mobile.png" alt="ZX9 SPEAKER" width="88" height="96" srcset="img/similar-item-zx9-mobile.png 1x, img/similar-item-zx9-mobile@2x.png 2x">
-            </picture>
-          </div>
-          <a class="button button--primary" href="#">See Product</a>
-        </li>
-
-        <li class="similar-products__item" role="listitem">
-          <h3 class="similar-products__item-title">XX99 MARK II</h3>
-          <div class="similar-products__item-img-wrapper">
-            <picture class="similar-products__item-picture">
-              <source srcset="img/similar-item-xx99-mark2-tablet.png 1x, img/similar-item-xx99-mark2-tablet@2x.png 2x" media="(min-width:40em)">
-              <img class="similar-products__item-img" src="img/similar-item-xx99-mark2-mobile.png" alt="XX99 MARK II" width="88" height="96" srcset="img/similar-item-xx99-mark2-mobile.png 1x, img/similar-item-xx99-mark2-mobile@2x.png 2x">
-            </picture>
-          </div>
-          <a class="button button--primary" href="#">See Product</a>
-        </li>
-
-        <li class="similar-products__item" role="listitem">
-          <h3 class="similar-products__item-title">ZX7 SPEAKER</h3>
-          <div class="similar-products__item-img-wrapper">
-            <picture class="similar-products__item-picture">
-              <source srcset="img/similar-item-zx7-tablet.png 1x, img/similar-item-zx7-tablet@2x.png 2x" media="(min-width:40em)">
-              <img class="similar-products__item-img" src="img/similar-item-zx7-mobile.png" alt="ZX7 SPEAKER" width="88" height="96" srcset="img/similar-item-zx7-mobile.png 1x, img/similar-item-zx7-mobile@2x.png 2x">
-            </picture>
-          </div>
-          <a class="button button--primary" href="#">See Product</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-
-  <!-- SOCIALS -->
-  <section class="container">
-    <h2>Socials</h2>
-    <div style="display: grid; gap: 24px; justify-items: start; padding: 24px; background-color: #000;">
-      <div class="socials">
-        <ul class="socials__list" role="list">
-          <li class="socials__item" role="listitem">
-            <a href="#" class="socials__link" target="_blank" aria-label="Facebook page (opens in new tab)">
-              <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" aria-hidden="true" focusable="false"><path fill="currentColor" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0Z"/></svg>
-            </a>
-          </li>
-          <li class="socials__item" role="listitem">
-            <a href="#" class="socials__link" target="_blank" aria-label="Twitter page (opens in new tab)">
-              <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none" aria-hidden="true" focusable="false"><path fill="currentColor" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557Z"/></svg>
-            </a>
-          </li>
-          <li class="socials__item" role="listitem">
-            <a href="#" class="socials__link" target="_blank" aria-label="Instagram page (opens in new tab)">
-              <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001Z" clip-rule="evenodd"/></svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- PRODUCT-INFO -->
-  <section class="container">
-    <h2>Product info</h2>
-    <div style="display: grid; gap: 32px; background-color: #ccc; padding: 24px;">
-      <div class="product-info product-info--hero product-info--center product-info--white">
-        <h2 class="product-info__title">XX99 Mark II Headphones</h2>
-        <p class="product-info__new">New product</p>
-        <p class="product-info__text">The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.</p>
-
-        <footer class="product-info__actions">
-          <button class="button button--primary" type="button">See Product</button>
-        </footer>
-      </div>
-
-      <div class="product-info product-info--category-page product-info--center">
-        <h2 class="product-info__title product-info__title--lg">XX99 Mark II Headphones</h2>
-        <p class="product-info__new">New product</p>
-        <p class="product-info__text">The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.</p>
-
-        <footer class="product-info__actions">
-          <button class="button button--primary" type="button">See Product</button>
-        </footer>
-      </div>
-
-      <div class="product-info product-info--product-page">
-        <h2 class="product-info__title">XX99 Mark II Headphones</h2>
-        <p class="product-info__new">New product</p>
-        <p class="product-info__text">The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.</p>
-        <p class="product-info__price-wrapper">
-          <s class="product-info__old-price">$ 3,199</s>
-          <span class="product-info__price">$ 2,999</span>
-        </p>
-
-        <footer class="product-info__actions">
-          <div class="number-controls" data-item-count="1">
-            <p class="number-controls__count">
-              <span class="visually-hidden">Count</span>
-              <span class="number-controls__count-value">1</span>
-            </p>
-            <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
-            <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
-          </div>
-
-          <button class="button button--primary" type="button">Add to cart</button>
-        </footer>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- PRODUCT -->
-  <section class="container">
-    <h2>Product</h2>
-    <div style="display: grid; gap: 24px;">
-      Category page
-      <div class="product product--category-page">
-        <div class="product__img-wrapper">
-          <picture class="product__picture">
-            <source srcset="img/xx99-mark2-big.png 1x, img/xx99-mark2-big@2x.png 2x" media="(min-width:62em)">
-            <img class="product__img" src="img/xx99-mark2-medium.png" alt="XX99 Mark II Headphones" width="220" height="243" srcset="img/xx99-mark2-medium.png 1x, img/xx99-mark2-medium@2x.png 2x">
-          </picture>
-        </div>
-
-        <div class="product__product-info product-info product-info--category-page product-info--center">
-          <h2 class="product-info__title">XX99 Mark II Headphones</h2>
-          <p class="product-info__new">New product</p>
-          <p class="product-info__text">The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.</p>
-
-          <footer class="product-info__actions">
-            <button class="button button--primary" type="button">See Product</button>
-          </footer>
-        </div>
-      </div>
-
-      Product page
-      <div class="product product--product-page">
-        <div class="product__img-wrapper">
-          <picture class="product__picture">
-            <source srcset="img/xx99-mark2-big.png 1x, img/xx99-mark2-big@2x.png 2x" media="(min-width:62em)">
-            <img class="product__img" src="img/xx99-mark2-small.png" alt="XX99 Mark II Headphones" width="181" height="201" srcset="img/xx99-mark2-small.png 1x, img/xx99-mark2-small@2x.png 2x">
-          </picture>
-        </div>
-
-        <div class="product__product-info product-info product-info--product-page">
-          <h2 class="product-info__title">XX99 Mark II Headphones</h2>
-          <p class="product-info__new">New product</p>
-          <p class="product-info__text">The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.</p>
-          <p class="product-info__price-wrapper">
-            <s class="product-info__old-price">$ 3,199</s>
-            <span class="product-info__price">$ 2,999</span>
-          </p>
-
-          <footer class="product-info__actions">
-            <div class="number-controls" data-item-count="1">
-              <p class="number-controls__count">
-                <span class="visually-hidden">Count</span>
-                <span class="number-controls__count-value">1</span>
-              </p>
-              <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
-              <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
-            </div>
-
-            <button class="button button--primary" type="button">Add to cart</button>
-          </footer>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CATEGORY-HERO -->
-  <section class="category-hero">
-    <div class="container">
-      <h1 class="category-hero__title">Headphones</h1>
-    </div>
-  </section>
 
   <!-- MISSION -->
   <section class="mission">
