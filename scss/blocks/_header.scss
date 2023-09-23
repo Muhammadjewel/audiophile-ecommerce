@@ -80,6 +80,19 @@
 
 .header__menu-inner {
   display: none;
+
+  .header--menu-open & {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 100%;
+    display: block;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-radius: 0 0 8px 8px;
+    background-color: var(--color-white);
+  }
 }
 
 .header__logo {

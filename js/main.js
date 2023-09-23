@@ -2,6 +2,17 @@ function init () {
   const MINIMUM_ITEM_COUNT = 1;
   const MAXIMUM_ITEM_COUNT = 10;
 
+  // Header
+  const elHeader = document.querySelector('.header');
+  const elHeaderMenuToggler = elHeader.querySelector('.header__menu-toggler');
+
+  if (elHeaderMenuToggler) {
+    elHeaderMenuToggler.addEventListener('click', function () {
+      elHeader.classList.toggle('header--menu-open');
+    });
+  }
+
+  // Number controls
   const elNumberControlsDecrementButton =  document.querySelectorAll('.number-controls__button--decrement');
   const elNumberControlsIncrementButton =  document.querySelectorAll('.number-controls__button--increment');
 
