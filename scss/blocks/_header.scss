@@ -136,4 +136,16 @@
 
 .header__cart-inner {
   display: none;
+
+  .header--cart-open & {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: calc(100% + 24px);
+
+    @include breakpoint-up (62em) {
+      top: calc(100% + 32px);
+    }
+  }
 }

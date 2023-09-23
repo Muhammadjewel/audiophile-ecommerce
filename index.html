@@ -78,66 +78,68 @@
 
         <div class="header__cart-inner">
           <!-- CART-CARD -->
-          <section class="cart-card">
-            <header class="cart-card__header">
-              <h2 class="cart-card__heading">Cart (3)</h2>
-              <button class="cart-card__remove-items-button" type="button">Remove all</button>
-            </header>
-            <div class="cart-card__inner">
-              <ul class="cart-card__products" role="list">
-                <li class="cart-card__product product-cart-card" role="listitem">
-                  <div class="product-cart-card__img-wrapper">
-                    <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
-                  </div>
+          <div class="container">
+            <section class="cart-card">
+              <header class="cart-card__header">
+                <h2 class="cart-card__heading">Cart (3)</h2>
+                <button class="cart-card__remove-items-button" type="button">Remove all</button>
+              </header>
+              <div class="cart-card__inner">
+                <ul class="cart-card__products" role="list">
+                  <li class="cart-card__product product-cart-card" role="listitem">
+                    <div class="product-cart-card__img-wrapper">
+                      <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
+                    </div>
 
-                  <div class="product-cart-card__info">
-                    <h3 class="product-cart-card__title">XX99 MK II</h3>
-                    <p class="product-cart-card__price">$ 2,999</p>
-                    <div class="product-cart-card__count">
-                      <div class="number-controls number-controls--small" data-item-count="1">
-                        <p class="number-controls__count">
-                          <span class="visually-hidden">Count</span>
-                          <span class="number-controls__count-value">1</span>
-                        </p>
-                        <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
-                        <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
+                    <div class="product-cart-card__info">
+                      <h3 class="product-cart-card__title">XX99 MK II</h3>
+                      <p class="product-cart-card__price">$ 2,999</p>
+                      <div class="product-cart-card__count">
+                        <div class="number-controls number-controls--small" data-item-count="1">
+                          <p class="number-controls__count">
+                            <span class="visually-hidden">Count</span>
+                            <span class="number-controls__count-value">1</span>
+                          </p>
+                          <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
+                          <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </li>
+                  </li>
 
-                <li class="cart-card__product product-cart-card" role="listitem">
-                  <div class="product-cart-card__img-wrapper">
-                    <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
-                  </div>
+                  <li class="cart-card__product product-cart-card" role="listitem">
+                    <div class="product-cart-card__img-wrapper">
+                      <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
+                    </div>
 
-                  <div class="product-cart-card__info">
-                    <h3 class="product-cart-card__title">XX99 MK II</h3>
-                    <p class="product-cart-card__price">$ 2,999</p>
-                    <div class="product-cart-card__count">
-                      <div class="number-controls number-controls--small" data-item-count="1">
-                        <p class="number-controls__count">
-                          <span class="visually-hidden">Count</span>
-                          <span class="number-controls__count-value">1</span>
-                        </p>
-                        <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
-                        <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
+                    <div class="product-cart-card__info">
+                      <h3 class="product-cart-card__title">XX99 MK II</h3>
+                      <p class="product-cart-card__price">$ 2,999</p>
+                      <div class="product-cart-card__count">
+                        <div class="number-controls number-controls--small" data-item-count="1">
+                          <p class="number-controls__count">
+                            <span class="visually-hidden">Count</span>
+                            <span class="number-controls__count-value">1</span>
+                          </p>
+                          <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
+                          <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
+                        </div>
                       </div>
                     </div>
+                  </li>
+                </ul>
+
+                <dl class="cart-card__summary cart-card__summary--checkout-page cart-card-summary">
+                  <div class="cart-card-summary__item">
+                    <dt class="cart-card-summary__title">Total</dt>
+                    <dd class="cart-card-summary__value">$ 5,396</dd>
                   </div>
-                </li>
-              </ul>
+                </dl>
 
-              <dl class="cart-card__summary cart-card__summary--checkout-page cart-card-summary">
-                <div class="cart-card-summary__item">
-                  <dt class="cart-card-summary__title">Total</dt>
-                  <dd class="cart-card-summary__value">$ 5,396</dd>
-                </div>
-              </dl>
-
-              <a class="button button--primary button--block" href="checkout.html">Checkout</a>
-            </div>
-          </section>
+                <a class="button button--primary button--block" href="checkout.html">Checkout</a>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </div>
