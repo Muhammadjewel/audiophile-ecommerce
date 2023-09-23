@@ -1763,11 +1763,33 @@ select:-webkit-autofill:focus {
   position: absolute;
   z-index: 1;
   right: 0;
-  top: calc(100% + 24px);
+  top: 100%;
+  width: 100%;
+}
+@media only screen and (min-width: 23.4375em) {
+  .header--cart-open .header__cart-inner {
+    top: calc(100% + 24px);
+  }
 }
 @media only screen and (min-width: 62em) {
   .header--cart-open .header__cart-inner {
     top: calc(100% + 32px);
+  }
+}
+
+.header__cart-card {
+  padding: 16px;
+  margin-left: calc(var(--container-padding) * -1);
+  margin-right: calc(var(--container-padding) * -1);
+  border-radius: 0;
+}
+@media only screen and (min-width: 23.4375em) {
+  .header__cart-card {
+    max-width: 23.4375rem;
+    padding: 32px;
+    margin-left: auto;
+    margin-right: 0;
+    border-radius: 8px;
   }
 }
 
