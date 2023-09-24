@@ -9,18 +9,43 @@ function init () {
   // Click outside
   // Esc keyup
 
+  function closeHeaderCart () {
+    elHeader.classList.remove('header--cart-open');
+  }
+
+  function closeHeaderMenu () {
+    elHeader.classList.remove('header--menu-open');
+  }
+
+  function elHeaderEscKeyupHandler (evt) {
+    if (evt.key === 'Escape') {
+      closeHeaderCart();
+      closeHeaderMenu();
+      document.removeEventListener('keyup', elHeaderEscKeyupHandler);
+    }
+  }
+
   elsHeaderToggler.forEach(function (elHeaderToggler) {
     elHeaderToggler.addEventListener('click', function () {
       const target = elHeaderToggler.dataset.target;
 
       if (target === 'menu') {
         elHeader.classList.toggle('header--menu-open');
-        elHeader.classList.remove('header--cart-open');
+        closeHeaderCart();
       }
 
       if (target === 'cart') {
         elHeader.classList.toggle('header--cart-open');
-        elHeader.classList.remove('header--menu-open');
+        closeHeaderMenu();
+      }
+
+      // Close header popups when click outside and Esc keyup
+      let isHeaderPopupsOpen = elHeader.classList.contains('header--menu-open') || elHeader.classList.contains('header--cart-open');
+
+      if (isHeaderPopupsOpen) {
+        document.addEventListener('keyup', elHeaderEscKeyupHandler);
+      } else {
+        document.removeEventListener('keyup', elHeaderEscKeyupHandler);
       }
     });
   });
