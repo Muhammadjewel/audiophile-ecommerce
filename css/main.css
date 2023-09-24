@@ -1619,9 +1619,7 @@ select:-webkit-autofill:focus {
 }
 .header {
   position: relative;
-  z-index: 1;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  z-index: 99;
   background-color: var(--color-black);
 }
 .header--absolute {
@@ -1630,9 +1628,6 @@ select:-webkit-autofill:focus {
   left: 0;
   top: 0;
   width: 100%;
-}
-.header--menu-open, .header--cart-open {
-  z-index: 99;
 }
 .header::after {
   position: absolute;
@@ -1649,9 +1644,19 @@ select:-webkit-autofill:focus {
     right: var(--container-padding);
   }
 }
+.header--menu-open::before, .header--cart-open::before {
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  content: "";
+}
 @media only screen and (min-width: 62em) {
-  .header {
-    padding-bottom: 36px;
+  .header--menu-open::before {
+    display: none;
   }
 }
 
@@ -1660,6 +1665,8 @@ select:-webkit-autofill:focus {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 @media only screen and (min-width: 40em) {
   .header__container {
@@ -1671,6 +1678,7 @@ select:-webkit-autofill:focus {
   .header__container {
     justify-content: space-between;
     gap: 42px;
+    padding-bottom: 36px;
   }
 }
 
