@@ -3,7 +3,7 @@
   padding-bottom: 60px;
   text-align: center;
 
-  @include breakpoint-up (62em) {
+  @include breakpoint-up ($breakpoint-large) {
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -13,7 +13,7 @@
   @include page-section-heading;
   margin-bottom: 40px;
 
-  @include breakpoint-up(40em) {
+  @include breakpoint-up($breakpoint-medium-small) {
     margin-bottom: 56px;
   }
 
@@ -28,7 +28,7 @@
   padding: 0;
   list-style: none;
 
-  @include breakpoint-up(40em) {
+  @include breakpoint-up($breakpoint-medium-small) {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -60,7 +60,7 @@
   padding: 12px;
   margin-bottom: 32px;
 
-  @include breakpoint-up(40em) {
+  @include breakpoint-up($breakpoint-medium-small) {
     height: 318px;
     margin-bottom: 40px;
   }
@@ -71,7 +71,7 @@
   height: 96px;
   object-fit: contain;
 
-  @include breakpoint-up(40em) {
+  @include breakpoint-up($breakpoint-medium-small) {
     width: 190px;
     height: 200px;
   }

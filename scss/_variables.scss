@@ -20,6 +20,13 @@ $container-padding: 24px;
 // Effects
 $transition-duration: 0.3s;
 
+// Breakpoints
+$breakpoint-small: 23.4375em;
+$breakpoint-medium-small: 40em;
+$breakpoint-medium: 48em;
+$breakpoint-large: 62em;
+$breakpoint-container: 74.375em;
+
 /* CUSTOM PROPS */
 :root {
   --color-brown: #{$color-brown};

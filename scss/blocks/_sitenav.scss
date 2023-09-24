@@ -28,7 +28,7 @@
 }
 
 /* 375px */
-@include breakpoint-up (23.4375em) {
+@include breakpoint-up ($breakpoint-small) {
   .sitenav__list {
     flex-direction: row;
     flex-wrap: wrap;

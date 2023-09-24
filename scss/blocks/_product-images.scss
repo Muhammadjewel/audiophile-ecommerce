@@ -12,11 +12,11 @@
     grid-template-rows: repeat(2, 174px);
   }
 
-  @include breakpoint-up (62em) {
+  @include breakpoint-up ($breakpoint-large) {
     grid-template-rows: repeat(2, 280px);
   }
 
-  @include breakpoint-up (74.375em) {
+  @include breakpoint-up ($breakpoint-container) {
     grid-template-columns: 27.8125rem minmax(39.6875rem 1fr);
   }
 }

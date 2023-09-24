@@ -33,7 +33,7 @@
 }
 
 /* 768px */
-@include breakpoint-up (48em) {
+@include breakpoint-up ($breakpoint-medium) {
   .footer__container {
     grid-template-columns: 1fr 1fr;
     justify-items: start;
@@ -69,7 +69,7 @@
 }
 
 /* 992px */
-@include breakpoint-up (62em) {
+@include breakpoint-up ($breakpoint-large) {
   .footer__container {
     padding-top: 76px;
     padding-bottom: 48px;

@@ -42,7 +42,7 @@
 }
 
 /* 768px */
-@include breakpoint-up (48em) {
+@include breakpoint-up ($breakpoint-medium) {
   .mission {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -60,7 +60,7 @@
 }
 
 /* 992px */
-@include breakpoint-up (62em) {
+@include breakpoint-up ($breakpoint-large) {
   .mission {
     padding-top: 200px;
     padding-bottom: 200px;

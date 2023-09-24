@@ -23,7 +23,7 @@
     }
   }
 
-  @include breakpoint-up (62em) {
+  @include breakpoint-up ($breakpoint-large) {
     padding: 64px 96px;
     background-image: url("../img/featured-product-bg-desktop.jpg");
     background-position: center center;

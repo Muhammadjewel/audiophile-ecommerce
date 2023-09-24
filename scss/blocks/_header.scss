@@ -38,7 +38,7 @@
     content: "";
   }
 
-  @include breakpoint-up (62em) {
+  @include breakpoint-up ($breakpoint-large) {
     &--menu-open::before {
       display: none;
     }
@@ -58,7 +58,7 @@
     gap: 42px;
   }
 
-  @include breakpoint-up (62em) {
+  @include breakpoint-up ($breakpoint-large) {
     justify-content: space-between;
     gap: 42px;
     padding-bottom: 36px;
@@ -68,7 +68,7 @@
 .header__menu {
   flex-shrink: 0;
 
-  @include breakpoint-up (62em) {
+  @include breakpoint-up ($breakpoint-large) {
     display: none;
   }
 }
@@ -121,7 +121,7 @@
     margin-right: auto;
   }
 
-  @include breakpoint-up (62em) {
+  @include breakpoint-up ($breakpoint-large) {
     margin-right: 0;
   }
 }
@@ -129,7 +129,7 @@
 .header__sitenav {
   display: none;
 
-  @include breakpoint-up (62em) {
+  @include breakpoint-up ($breakpoint-large) {
     display: block;
   }
 }
@@ -137,7 +137,7 @@
 .header__cart {
   flex-shrink: 0;
 
-  @include breakpoint-up (62em) {
+  @include breakpoint-up ($breakpoint-large) {
     display: flex;
     justify-content: flex-end;
     min-width: 143px;
@@ -155,11 +155,11 @@
     top: 100%;
     width: 100%;
 
-    @include breakpoint-up (23.4375em) {
+    @include breakpoint-up ($breakpoint-small) {
       top: calc(100% + 24px);
     }
 
-    @include breakpoint-up (62em) {
+    @include breakpoint-up ($breakpoint-large) {
       top: calc(100% + 32px);
     }
   }
@@ -171,7 +171,7 @@
   margin-right: calc(var(--container-padding) * -1);
   border-radius: 0;
 
-  @include breakpoint-up (23.4375em) {
+  @include breakpoint-up ($breakpoint-small) {
     max-width: 23.4375rem;
     padding: 32px;
     margin-left: auto;

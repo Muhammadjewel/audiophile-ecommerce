@@ -14,7 +14,7 @@
     content: "";
     @include round-card($width: 100%, $height: 165px);
 
-    @include breakpoint-up (62em) {
+    @include breakpoint-up ($breakpoint-large) {
       height: 204px;
     }
   }
@@ -22,7 +22,7 @@
   &::after {
     @include product-shadow($bottom: 108px, $width: 95px, $height: 14px, $opacity: 1);
 
-    @include breakpoint-up (62em) {
+    @include breakpoint-up ($breakpoint-large) {
       width: 122px;
       height: 18px;
     }
@@ -39,7 +39,7 @@
   color: var(--color-black);
   text-transform: uppercase;
 
-  @include breakpoint-up (62em) {
+  @include breakpoint-up ($breakpoint-large) {
     font-size: 1.125rem;
     letter-spacing: 0.08038rem;
   }
@@ -54,7 +54,7 @@
   margin-bottom: 36px;
   object-fit: contain;
 
-  @include breakpoint-up (62em) {
+  @include breakpoint-up ($breakpoint-large) {
     width: 125px;
     height: 160px;
   }

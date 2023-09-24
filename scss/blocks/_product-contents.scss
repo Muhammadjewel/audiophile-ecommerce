@@ -6,7 +6,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @include breakpoint-up (62em) {
+  @include breakpoint-up ($breakpoint-large) {
     grid-template-columns: none;
     gap: 32px;
   }

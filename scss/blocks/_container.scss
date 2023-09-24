@@ -9,7 +9,7 @@
 }
 
 /* 640px */
-@include breakpoint-up(40em) {
+@include breakpoint-up($breakpoint-medium-small) {
   $container-padding: 40px;
 
   :root {

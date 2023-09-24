@@ -10,7 +10,7 @@
     gap: 120px;
   }
 
-  @include breakpoint-up (62em) {
+  @include breakpoint-up ($breakpoint-large) {
     grid-template-columns: 1fr 21.875rem;
     gap: 125px;
   }
