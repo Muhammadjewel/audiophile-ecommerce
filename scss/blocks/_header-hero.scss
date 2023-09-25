@@ -1,0 +1,37 @@
+.header-hero {
+  position: relative;
+  background-color: $color-bg-hero;
+  padding-top: calc(89px + 108px);
+  padding-bottom: 112px;
+  background-image: url("../img/header-hero-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina-bg () {
+    background-image: url("../img/header-hero-bg-mobile@2x.png");
+  }
+
+  @include breakpoint-up ($breakpoint-medium-small) {
+    padding-top: calc(89px + 126px);
+    padding-bottom: 167px;
+    background-color: #121212;
+    background-image: url("../img/header-hero-bg-tablet.png");
+
+    @include retina-bg () {
+      background-image: url("../img/header-hero-bg-tablet@2x.png");
+    }
+  }
+
+  @include breakpoint-up ($breakpoint-large) {
+    padding-top: calc(93px + 128px);
+    padding-bottom: 158px;
+    background-image: url("../img/header-hero-bg-desktop.png");
+    background-size: 710px 729px;
+    background-position: calc(50% + 243px) top;
+
+    @include retina-bg () {
+      background-image: url("../img/header-hero-bg-desktop@2x.png");
+    }
+  }
+}

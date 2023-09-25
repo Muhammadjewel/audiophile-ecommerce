@@ -83,6 +83,7 @@
 
   .product-info--hero & {
     margin-bottom: 16px;
+    color: color.scale($color-white, $alpha: -50%);
 
     @include breakpoint-up (40em) {
       margin-bottom: 24px;
@@ -110,9 +111,17 @@
 
   .product-info--hero & {
     margin-bottom: 28px;
+    color: color.scale($color-white, $alpha: -25%);
 
     @include breakpoint-up (40em) {
+      max-width: 21.875rem;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 40px;
+    }
+
+    @include breakpoint-up (62em) {
+      margin-left: 0;
     }
   }
 

@@ -1,0 +1,13 @@
+.hero__product-info {
+  max-width: 20.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include breakpoint-up ($breakpoint-medium-small) {
+    max-width: 24.75rem;
+  }
+
+  @include breakpoint-up ($breakpoint-large) {
+    margin-left: 0;
+  }
+}
