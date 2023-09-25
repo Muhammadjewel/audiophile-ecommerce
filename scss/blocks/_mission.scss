@@ -1,10 +1,5 @@
 @use 'sass:color';
 
-.mission {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .mission__container {
   display: grid;
   justify-items: center;
@@ -43,11 +38,6 @@
 
 /* 768px */
 @include breakpoint-up ($breakpoint-medium) {
-  .mission {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-
   .mission__img {
     margin-bottom: 40px;
   }
@@ -61,11 +51,6 @@
 
 /* 992px */
 @include breakpoint-up ($breakpoint-large) {
-  .mission {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-
   .mission__container {
     grid-template-columns: 27.8125rem 1fr;
     gap: 125px;
