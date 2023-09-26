@@ -782,22 +782,6 @@ select:-webkit-autofill:focus {
   }
 }
 
-.category-products {
-  padding-top: 64px;
-  padding-bottom: 120px;
-}
-@media only screen and (min-width: 40em) {
-  .category-products {
-    padding-top: 120px;
-  }
-}
-@media only screen and (min-width: 62em) {
-  .category-products {
-    padding-top: 160px;
-    padding-bottom: 160px;
-  }
-}
-
 .category-products__list {
   display: grid;
   gap: 120px;
@@ -1987,5 +1971,44 @@ select:-webkit-autofill:focus {
 @media only screen and (min-width: 62em) {
   .index-page__featured-products {
     margin-bottom: 200px;
+  }
+}
+
+.category-page__content {
+  padding-top: 64px;
+  padding-bottom: 120px;
+}
+@media only screen and (min-width: 40em) {
+  .category-page__content {
+    padding-top: 120px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .category-page__content {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+}
+
+.category-page__category-products {
+  margin-bottom: 135px;
+}
+@media only screen and (min-width: 40em) {
+  .category-page__category-products {
+    margin-bottom: 120px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .category-page__category-products {
+    margin-bottom: 160px;
+  }
+}
+
+.category-page__category-cards {
+  margin-bottom: 120px;
+}
+@media only screen and (min-width: 62em) {
+  .category-page__category-cards {
+    margin-bottom: 160px;
   }
 }/*# sourceMappingURL=main.css.map */

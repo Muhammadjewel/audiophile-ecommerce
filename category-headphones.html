@@ -9,96 +9,260 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/main.min.css">
 </head>
-<body>
+<body class="category-page">
 
-  <!-- CATEGORY-HERO -->
-  <div class="category-hero">
-    <div class="container">
-      <h1 class="category-hero__title">Headphones</h1>
-    </div>
-  </div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__container container">
+      <!-- HEADER MENU -->
+      <div class="header__menu">
+        <button class="header__toggler" type="button" data-target="menu" aria-label="Toogle categories menu">
+          <svg class="header__toggler-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z"/></g></svg>
+        </button>
 
-
-  <!-- CATEGORY-PRODUCTS -->
-  <section class="category-products">
-    <div class="container">
-      <h2 class="visually-hidden">Headphones category product list</h2>
-
-      <ul class="category-products__list" role="list">
-        <li class="product product--category-page" role="listitem">
-          <div class="product__img-wrapper">
-            <picture class="product__picture">
-              <source srcset="img/xx99-mark2-big.png 1x, img/xx99-mark2-big@2x.png 2x" media="(min-width:62em)">
-              <img class="product__img" src="img/xx99-mark2-medium.png" alt="XX99 Mark II Headphones" width="220" height="243" srcset="img/xx99-mark2-medium.png 1x, img/xx99-mark2-medium@2x.png 2x">
-            </picture>
+        <div class="header__menu-inner">
+          <div class="container">
+            <!-- CATEGORY-CARDS -->
+            <div class="category-cards">
+              <h2 class="visually-hidden">Product categories</h2>
+              <ul class="category-cards__list" role="list">
+                <li class="category-cards__item category-card" role="listitem">
+                  <h3 class="category-card__title">Headphones</h3>
+                  <img class="category-card__img" src="img/category-img-headphones.png" alt="Headphone sample" width="103" height="104" srcset="img/category-img-headphones.png 1x, img/category-img-headphones@2x.png 2x">
+                  <a href="category-headphones.html" class="arrow-link arrow-link--stretched">Shop</a>
+                </li>
+                <li class="category-cards__item category-card" role="listitem">
+                  <h3 class="category-card__title">Speakers</h3>
+                  <img class="category-card__img" src="img/category-img-speakers.png" alt="Speaker sample" width="103" height="104" srcset="img/category-img-speakers.png 1x, img/category-img-speakers@2x.png 2x">
+                  <a href="category-speakers.html" class="arrow-link arrow-link--stretched">Shop</a>
+                </li>
+                <li class="category-cards__item category-card" role="listitem">
+                  <h3 class="category-card__title">Earphones</h3>
+                  <img class="category-card__img" src="img/category-img-earphones.png" alt="Earphone sample" width="103" height="104" srcset="img/category-img-earphones.png 1x, img/category-img-earphones@2x.png 2x">
+                  <a href="category-earphones.html" class="arrow-link arrow-link--stretched">Shop</a>
+                </li>
+              </ul>
+            </div>
           </div>
+        </div>
+      </div>
 
-          <div class="product__product-info product-info product-info--category-page product-info--center">
-            <h2 class="product-info__title">XX99 Mark II Headphones</h2>
-            <p class="product-info__new">New product</p>
-            <p class="product-info__text">The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.</p>
+      <!-- LOGO -->
+      <a class="header__logo logo" href="index.html" aria-label="Go to home page">
+        <img class="logo__img" src="img/logo.svg" alt="Audiophile logo" width="143" height="25">
+      </a>
 
-            <footer class="product-info__actions">
-              <button class="button button--primary" type="button">See Product</button>
-            </footer>
+      <!-- SITENAV -->
+      <nav class="header__sitenav sitenav">
+        <ul class="sitenav__list" role="list">
+          <li class="sitenav__item" role="listitem">
+            <a class="sitenav__link" href="#">Home</a>
+          </li>
+          <li class="sitenav__item sitenav__item--active" role="listitem">
+            <a class="sitenav__link" href="#">Headphones</a>
+          </li>
+          <li class="sitenav__item" role="listitem">
+            <a class="sitenav__link" href="#">Speakers</a>
+          </li>
+          <li class="sitenav__item" role="listitem">
+            <a class="sitenav__link" href="#">Earphones</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- HEADER CART -->
+      <div class="header__cart">
+        <button class="header__toggler" type="button" data-target="cart" aria-label="Toogle shopping cart">
+          <svg class="header__toggler-icon header__toggler-icon--cart" xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M7.411 13.195a.667.667 0 0 0-.673.66c0 .363.303.659.674.659h12.219c.372 0 .674.295.674.66 0 .364-.302.66-.674.66H7.412c-1.114 0-2.021-.889-2.021-1.98 0-.812.502-1.511 1.218-1.816L4.176 1.32H.674A.667.667 0 0 1 0 .66C0 .296.302 0 .674 0h4.043c.316 0 .59.215.658.517l.481 2.122h16.47c.212 0 .41.097.538.262.127.166.168.38.11.579l-2.695 9.236a.672.672 0 0 1-.648.478H7.41Zm1.214 2.638c1.132 0 2.054.935 2.054 2.084 0 1.148-.922 2.083-2.054 2.083-1.132 0-2.054-.935-2.054-2.083 0-1.15.922-2.084 2.054-2.084Zm9.857 0c1.133 0 2.054.935 2.054 2.084 0 1.148-.922 2.083-2.054 2.083-1.132 0-2.053-.935-2.053-2.083 0-1.15.92-2.084 2.053-2.084Zm.64-3.958 2.31-7.917H6.157l1.797 7.917h11.17ZM9.31 17.917a.69.69 0 0 0-.685-.695.69.69 0 0 0-.685.695.69.69 0 0 0 .685.694.69.69 0 0 0 .685-.694Zm9.172-.695a.69.69 0 0 1 .685.695.69.69 0 0 1-.685.694.69.69 0 0 1-.684-.694.69.69 0 0 1 .684-.695Z" clip-rule="evenodd"/></svg>
+        </button>
+
+        <div class="header__cart-inner">
+          <!-- CART-CARD -->
+          <div class="container">
+            <section class="header__cart-card cart-card">
+              <header class="cart-card__header">
+                <h2 class="cart-card__heading">Cart (3)</h2>
+                <button class="cart-card__remove-items-button" type="button">Remove all</button>
+              </header>
+              <div class="cart-card__inner">
+                <ul class="cart-card__products" role="list">
+                  <li class="cart-card__product product-cart-card" role="listitem">
+                    <div class="product-cart-card__img-wrapper">
+                      <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
+                    </div>
+
+                    <div class="product-cart-card__info">
+                      <h3 class="product-cart-card__title">XX99 MK II</h3>
+                      <p class="product-cart-card__price">$ 2,999</p>
+                      <div class="product-cart-card__count">
+                        <div class="number-controls number-controls--small" data-item-count="1">
+                          <p class="number-controls__count">
+                            <span class="visually-hidden">Count</span>
+                            <span class="number-controls__count-value">1</span>
+                          </p>
+                          <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
+                          <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="cart-card__product product-cart-card" role="listitem">
+                    <div class="product-cart-card__img-wrapper">
+                      <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
+                    </div>
+
+                    <div class="product-cart-card__info">
+                      <h3 class="product-cart-card__title">XX99 MK II</h3>
+                      <p class="product-cart-card__price">$ 2,999</p>
+                      <div class="product-cart-card__count">
+                        <div class="number-controls number-controls--small" data-item-count="1">
+                          <p class="number-controls__count">
+                            <span class="visually-hidden">Count</span>
+                            <span class="number-controls__count-value">1</span>
+                          </p>
+                          <button class="number-controls__button number-controls__button--decrement" type="button" aria-label="Subtract one">-</button>
+                          <button class="number-controls__button number-controls__button--increment" type="button" aria-label="Add one">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <dl class="cart-card__summary cart-card__summary--checkout-page cart-card-summary">
+                  <div class="cart-card-summary__item">
+                    <dt class="cart-card-summary__title">Total</dt>
+                    <dd class="cart-card-summary__value">$ 5,396</dd>
+                  </div>
+                </dl>
+
+                <a class="button button--primary button--block" href="checkout.html">Checkout</a>
+              </div>
+            </section>
           </div>
-        </li>
-
-        <li class="product product--category-page" role="listitem">
-          <div class="product__img-wrapper">
-            <picture class="product__picture">
-              <source srcset="img/xx99-mark1-big.png 1x, img/xx99-mark1-big@2x.png 2x" media="(min-width:62em)">
-              <img class="product__img" src="img/xx99-mark1-medium.png" alt="XX99 Mark II Headphones" width="220" height="243" srcset="img/xx99-mark1-medium.png 1x, img/xx99-mark1-medium@2x.png 2x">
-            </picture>
-          </div>
-
-          <div class="product__product-info product-info product-info--category-page product-info--center">
-            <h2 class="product-info__title">XX99 Mark I Headphones</h2>
-            <p class="product-info__text">As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.</p>
-
-            <footer class="product-info__actions">
-              <button class="button button--primary" type="button">See Product</button>
-            </footer>
-          </div>
-        </li>
-
-        <li class="product product--category-page" role="listitem">
-          <div class="product__img-wrapper">
-            <picture class="product__picture">
-              <source srcset="img/xx59-big.png 1x, img/xx59-big@2x.png 2x" media="(min-width:62em)">
-              <img class="product__img" src="img/xx59-medium.png" alt="XX99 Mark II Headphones" width="220" height="243" srcset="img/xx59-medium.png 1x, img/xx59-medium@2x.png 2x">
-            </picture>
-          </div>
-
-          <div class="product__product-info product-info product-info--category-page product-info--center">
-            <h2 class="product-info__title">XX59 Headphones</h2>
-            <p class="product-info__text">Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.</p>
-
-            <footer class="product-info__actions">
-              <button class="button button--primary" type="button">See Product</button>
-            </footer>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-
-  <!-- MISSION -->
-  <section class="mission">
-    <div class="mission__container container">
-      <picture class="mission__picture">
-        <source srcset="img/mission-desktop.jpg 1x, img/mission-desktop@2x.jpg 2x" media="(min-width:62em)">
-        <source srcset="img/mission-tablet.jpg 1x, img/mission-tablet@2x.jpg 2x" media="(min-width:48em)">
-        <img class="mission__img" src="img/mission-mobile.jpg" alt="Young man listening to music using headphones" width="327" height="300" srcset="img/mission-mobile.jpg 1x, img/mission-mobile@2x.jpg 2x">
-      </picture>
-
-      <div class="mission__content">
-        <h2 class="mission__heading">Bringing you the <strong class="mission__heading-accent">best</strong> audio gear</h2>
-        <p class="mission__text">Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
+        </div>
       </div>
     </div>
-  </section>
+  </header>
+
+
+  <!-- MAIN-CONTENT -->
+  <main class="main-content">
+    <!-- CATEGORY-HERO -->
+    <div class="category-hero">
+      <div class="container">
+        <h1 class="category-hero__title">Headphones</h1>
+      </div>
+    </div>
+
+    <div class="category-page__content">
+      <!-- CATEGORY-PRODUCTS -->
+      <section class="category-page__category-products category-products">
+        <div class="container">
+          <h2 class="visually-hidden">Headphones category product list</h2>
+
+          <ul class="category-products__list" role="list">
+            <li class="product product--category-page" role="listitem">
+              <div class="product__img-wrapper">
+                <picture class="product__picture">
+                  <source srcset="img/xx99-mark2-big.png 1x, img/xx99-mark2-big@2x.png 2x" media="(min-width:62em)">
+                  <img class="product__img" src="img/xx99-mark2-medium.png" alt="XX99 Mark II Headphones" width="220" height="243" srcset="img/xx99-mark2-medium.png 1x, img/xx99-mark2-medium@2x.png 2x">
+                </picture>
+              </div>
+
+              <div class="product__product-info product-info product-info--category-page product-info--center">
+                <h2 class="product-info__title">XX99 Mark II Headphones</h2>
+                <p class="product-info__new">New product</p>
+                <p class="product-info__text">The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.</p>
+
+                <footer class="product-info__actions">
+                  <button class="button button--primary" type="button">See Product</button>
+                </footer>
+              </div>
+            </li>
+
+            <li class="product product--category-page" role="listitem">
+              <div class="product__img-wrapper">
+                <picture class="product__picture">
+                  <source srcset="img/xx99-mark1-big.png 1x, img/xx99-mark1-big@2x.png 2x" media="(min-width:62em)">
+                  <img class="product__img" src="img/xx99-mark1-medium.png" alt="XX99 Mark II Headphones" width="220" height="243" srcset="img/xx99-mark1-medium.png 1x, img/xx99-mark1-medium@2x.png 2x">
+                </picture>
+              </div>
+
+              <div class="product__product-info product-info product-info--category-page product-info--center">
+                <h2 class="product-info__title">XX99 Mark I Headphones</h2>
+                <p class="product-info__text">As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.</p>
+
+                <footer class="product-info__actions">
+                  <button class="button button--primary" type="button">See Product</button>
+                </footer>
+              </div>
+            </li>
+
+            <li class="product product--category-page" role="listitem">
+              <div class="product__img-wrapper">
+                <picture class="product__picture">
+                  <source srcset="img/xx59-big.png 1x, img/xx59-big@2x.png 2x" media="(min-width:62em)">
+                  <img class="product__img" src="img/xx59-medium.png" alt="XX99 Mark II Headphones" width="220" height="243" srcset="img/xx59-medium.png 1x, img/xx59-medium@2x.png 2x">
+                </picture>
+              </div>
+
+              <div class="product__product-info product-info product-info--category-page product-info--center">
+                <h2 class="product-info__title">XX59 Headphones</h2>
+                <p class="product-info__text">Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.</p>
+
+                <footer class="product-info__actions">
+                  <button class="button button--primary" type="button">See Product</button>
+                </footer>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- CATEGORY-CARDS -->
+      <section class="category-page__category-cards container">
+        <div class="category-cards">
+          <h2 class="visually-hidden">Product categories</h2>
+          <ul class="category-cards__list" role="list">
+            <li class="category-cards__item category-card" role="listitem">
+              <h3 class="category-card__title">Headphones</h3>
+              <img class="category-card__img" src="img/category-img-headphones.png" alt="Headphone sample" width="103" height="104" srcset="img/category-img-headphones.png 1x, img/category-img-headphones@2x.png 2x">
+              <a href="category-headphones.html" class="arrow-link arrow-link--stretched">Shop</a>
+            </li>
+            <li class="category-cards__item category-card" role="listitem">
+              <h3 class="category-card__title">Speakers</h3>
+              <img class="category-card__img" src="img/category-img-speakers.png" alt="Speaker sample" width="103" height="104" srcset="img/category-img-speakers.png 1x, img/category-img-speakers@2x.png 2x">
+              <a href="category-speakers.html" class="arrow-link arrow-link--stretched">Shop</a>
+            </li>
+            <li class="category-cards__item category-card" role="listitem">
+              <h3 class="category-card__title">Earphones</h3>
+              <img class="category-card__img" src="img/category-img-earphones.png" alt="Earphone sample" width="103" height="104" srcset="img/category-img-earphones.png 1x, img/category-img-earphones@2x.png 2x">
+              <a href="category-earphones.html" class="arrow-link arrow-link--stretched">Shop</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- MISSION -->
+      <section class="mission">
+        <div class="mission__container container">
+          <picture class="mission__picture">
+            <source srcset="img/mission-desktop.jpg 1x, img/mission-desktop@2x.jpg 2x" media="(min-width:62em)">
+            <source srcset="img/mission-tablet.jpg 1x, img/mission-tablet@2x.jpg 2x" media="(min-width:48em)">
+            <img class="mission__img" src="img/mission-mobile.jpg" alt="Young man listening to music using headphones" width="327" height="300" srcset="img/mission-mobile.jpg 1x, img/mission-mobile@2x.jpg 2x">
+          </picture>
+
+          <div class="mission__content">
+            <h2 class="mission__heading">Bringing you the <strong class="mission__heading-accent">best</strong> audio gear</h2>
+            <p class="mission__text">Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
 
 
   <!-- FOOTER -->

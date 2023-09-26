@@ -1,0 +1,33 @@
+.category-page__content {
+  padding-top: 64px;
+  padding-bottom: 120px;
+
+  @include breakpoint-up ($breakpoint-medium-small) {
+    padding-top: 120px;
+  }
+
+  @include breakpoint-up ($breakpoint-large) {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+}
+
+.category-page__category-products {
+  margin-bottom: 135px;
+
+  @include breakpoint-up ($breakpoint-medium-small) {
+    margin-bottom: 120px;
+  }
+
+  @include breakpoint-up ($breakpoint-large) {
+    margin-bottom: 160px;
+  }
+}
+
+.category-page__category-cards {
+  margin-bottom: 120px;
+
+  @include breakpoint-up ($breakpoint-large) {
+    margin-bottom: 160px;
+  }
+}
