@@ -1237,7 +1237,7 @@ select:-webkit-autofill:focus {
 }
 @media only screen and (min-width: 74.375em) {
   .product-images__grid {
-    grid-template-columns: 27.8125rem minmax(39.6875rem 1fr);
+    grid-template-columns: 27.8125rem minmax(39.6875rem, 1fr);
   }
 }
 
@@ -1270,15 +1270,7 @@ select:-webkit-autofill:focus {
 }
 
 .similar-products {
-  padding-top: 60px;
-  padding-bottom: 60px;
   text-align: center;
-}
-@media only screen and (min-width: 62em) {
-  .similar-products {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
 }
 
 .similar-products__heading {
@@ -2009,6 +2001,86 @@ select:-webkit-autofill:focus {
 }
 @media only screen and (min-width: 62em) {
   .category-page__category-cards {
+    margin-bottom: 160px;
+  }
+}
+
+.product-page__main-content {
+  padding-top: 16px;
+  padding-bottom: 120px;
+}
+@media only screen and (min-width: 40em) {
+  .product-page__main-content {
+    padding-top: 32px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .product-page__main-content {
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
+}
+
+.product-page__back {
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 40em) {
+  .product-page__back {
+    margin-bottom: 56px;
+  }
+}
+
+.product-page__product {
+  margin-bottom: 88px;
+}
+@media only screen and (min-width: 40em) {
+  .product-page__product {
+    margin-bottom: 120px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .product-page__product {
+    margin-bottom: 160px;
+  }
+}
+
+.product-page__product-features-contents {
+  margin-bottom: 88px;
+}
+@media only screen and (min-width: 40em) {
+  .product-page__product-features-contents {
+    margin-bottom: 120px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .product-page__product-features-contents {
+    margin-bottom: 160px;
+  }
+}
+
+.product-page__product-images {
+  margin-bottom: 120px;
+}
+@media only screen and (min-width: 62em) {
+  .product-page__product-images {
+    margin-bottom: 160px;
+  }
+}
+
+.product-page__similar-products {
+  margin-bottom: 120px;
+}
+@media only screen and (min-width: 62em) {
+  .product-page__similar-products {
+    margin-bottom: 160px;
+  }
+}
+
+.product-page__category-cards {
+  margin-bottom: 120px;
+}
+@media only screen and (min-width: 62em) {
+  .product-page__category-cards {
     margin-bottom: 160px;
   }
 }/*# sourceMappingURL=main.css.map */
