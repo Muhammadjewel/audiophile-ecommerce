@@ -17,7 +17,7 @@
   }
 
   @include breakpoint-up ($breakpoint-container) {
-    grid-template-columns: 27.8125rem minmax(39.6875rem 1fr);
+    grid-template-columns: 27.8125rem minmax(39.6875rem, 1fr);
   }
 }
 
