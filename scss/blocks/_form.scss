@@ -7,9 +7,6 @@
   }
 }
 
-.form__section {
-}
-
 .form__section-heading {
   margin-bottom: 16px;
   font-size: 0.8125rem;
@@ -71,6 +68,10 @@
   color: rgba(0, 0, 0, 0.4);
   letter-spacing: -0.01563rem;
 
+  &:focus {
+    border-color: var(--color-primary);
+  }
+
   &:not(:placeholder-shown) {
     color: var(--color-black);
   }
@@ -79,7 +80,6 @@
     border-color: var(--color-error);
     box-shadow: inset 0 0 0 1px var(--color-error);
   }
-
 }
 
 .form__error-message {
