@@ -26,11 +26,11 @@
   gap: 32px;
 
   @include breakpoint-up ($breakpoint-large) {
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 }
 
-.checkout-page__form {
+.checkout-page__form-wrapper {
   @include round-card ($width: 100%, $height: auto, $bgcolor: $color-white);
   padding: 24px;
 
@@ -58,25 +58,6 @@
 
 .checkout-form {
 }
-.form {
-}
-.visually-hidden {
-}
-.form__section {
-}
-.form__section-heading {
-}
-.form__section-inner {
-}
-.form__group {
-}
-.form__label {
-}
-.form__field {
-}
-.form__error-message {
-}
-.form__group--full {
-}
+
 .checkout-page__summary {
 }
