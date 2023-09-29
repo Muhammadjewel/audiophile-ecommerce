@@ -32,12 +32,12 @@ a {
 }
 
 *:focus {
-  @include outline($color-primary);
+  @include outline(var(--color-primary));
 }
 
 
 /* AUTOFILL-STYLES */
-/*input:-webkit-autofill,
+input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
@@ -49,14 +49,14 @@ select:-webkit-autofill:focus {
   border-color: transparent;
   -webkit-text-fill-color: inherit;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
-}*/
+}
 
 
 /* PLACEHOLDER-STYLES */
-/*::-webkit-input-placeholder,
+::-webkit-input-placeholder,
 ::-moz-placeholder,
 :-ms-input-placeholder,
 :-moz-placeholder {
   color: rgba(52, 49, 61, 0.5);
   opacity: 1;
-}*/
+}

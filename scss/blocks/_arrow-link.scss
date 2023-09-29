@@ -14,7 +14,7 @@
   text-decoration: none;
 
   &:hover {
-    color: $color-primary;
+    color: var(--color-primary);
   }
 
   &:active {
@@ -45,7 +45,7 @@
     outline: none;
 
     &::before {
-      @include outline($color-primary);
+      @include outline(var(--color-primary));
     }
   }
 }
