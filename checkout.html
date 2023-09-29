@@ -211,7 +211,74 @@
         </form>
       </div>
 
-      <div class="checkout-page__summary-wrapper"></div>
+      <div class="checkout-page__summary-wrapper">
+        <section class="cart-card cart-card--checkout-page">
+          <header class="cart-card__header">
+            <h2 class="cart-card__heading">Summary</h2>
+            <button class="cart-card__remove-items-button" type="button">Remove all</button>
+          </header>
+          <div class="cart-card__inner">
+            <ul class="cart-card__products" role="list">
+              <li class="cart-card__product product-cart-card" role="listitem">
+                <div class="product-cart-card__img-wrapper">
+                  <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
+                </div>
+
+                <div class="product-cart-card__info">
+                  <h3 class="product-cart-card__title">XX99 MK II</h3>
+                  <p class="product-cart-card__price">$ 2,999</p>
+                  <div class="product-cart-card__count product-cart-card__count--summary">x1</div>
+                </div>
+              </li>
+
+              <li class="cart-card__product product-cart-card" role="listitem">
+                <div class="product-cart-card__img-wrapper">
+                  <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
+                </div>
+
+                <div class="product-cart-card__info">
+                  <h3 class="product-cart-card__title">XX99 MK II</h3>
+                  <p class="product-cart-card__price">$ 2,999</p>
+                  <div class="product-cart-card__count product-cart-card__count--summary">x1</div>
+                </div>
+              </li>
+
+              <li class="cart-card__product product-cart-card" role="listitem">
+                <div class="product-cart-card__img-wrapper">
+                  <img class="product-cart-card__img" src="https://picsum.photos/id/58/48" alt="" width="48" height="48" srcset="https://picsum.photos/id/58/48 1x, https://picsum.photos/id/58/96 2x">
+                </div>
+
+                <div class="product-cart-card__info">
+                  <h3 class="product-cart-card__title">XX99 MK II</h3>
+                  <p class="product-cart-card__price">$ 2,999</p>
+                  <div class="product-cart-card__count product-cart-card__count--summary">x1</div>
+                </div>
+              </li>
+            </ul>
+
+            <dl class="cart-card__summary cart-card__summary--checkout-page cart-card-summary">
+              <div class="cart-card-summary__item">
+                <dt class="cart-card-summary__title">Total</dt>
+                <dd class="cart-card-summary__value">$ 5,396</dd>
+              </div>
+              <div class="cart-card-summary__item">
+                <dt class="cart-card-summary__title">Shipping</dt>
+                <dd class="cart-card-summary__value">$ 50</dd>
+              </div>
+              <div class="cart-card-summary__item">
+                <dt class="cart-card-summary__title">VAT (Included)</dt>
+                <dd class="cart-card-summary__value">$ 1,079</dd>
+              </div>
+              <div class="cart-card-summary__item cart-card-summary__item--grand-total">
+                <dt class="cart-card-summary__title">Grand total</dt>
+                <dd class="cart-card-summary__value">$ 5,446</dd>
+              </div>
+            </dl>
+
+            <button class="button button--primary button--block" type="submit">Continue & pay</button>
+          </div>
+        </section>
+      </div>
     </div>
   </main>
 
