@@ -105,7 +105,7 @@ function init () {
 
   function enableEMoneyFields() {
     elsFormPaymentEMoneyField.forEach(function (elFormPaymentEMoneyField) {
-      elFormPaymentEMoneyField.setAttribute('disabled', 'false');
+      elFormPaymentEMoneyField.removeAttribute('disabled');
     });
   }
 
