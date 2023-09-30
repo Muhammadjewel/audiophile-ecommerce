@@ -16,6 +16,10 @@
   border-color: var(--color-primary);
 }
 
+.radio__input:checked:focus ~ .radio__control {
+  @include outline(var(--color-primary));
+}
+
 .radio__circle {
   position: relative;
   z-index: 1;
