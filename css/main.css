@@ -150,7 +150,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  border-color: transparent;
+  border-color: var(--color-border);
   -webkit-text-fill-color: inherit;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }
@@ -1545,6 +1545,11 @@ select:-webkit-autofill:focus {
   border-color: var(--color-primary);
 }
 
+.radio__input:checked:focus ~ .radio__control {
+  outline: 2px dashed var(--color-primary);
+  outline-offset: 3px;
+}
+
 .radio__circle {
   position: relative;
   z-index: 1;
@@ -1575,6 +1580,47 @@ select:-webkit-autofill:focus {
   line-height: normal;
   color: var(--color-black);
   letter-spacing: -0.01563rem;
+}
+
+.form-payment-method {
+  display: grid;
+  gap: 16px;
+}
+@media only screen and (min-width: 40em) {
+  .form-payment-method {
+    gap: 12px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .form-payment-method {
+    gap: 16px;
+  }
+}
+
+.form-payment-method__radio {
+  grid-column: 2/-1;
+}
+
+.form-payment-method__tabs {
+  grid-row: 3/4;
+  grid-column: 1/-1;
+}
+
+@media only screen and (min-width: 40em) {
+  .form-payment-method__cash-info {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.form-payment-method__cash-icon {
+  display: none;
+}
+@media only screen and (min-width: 40em) {
+  .form-payment-method__cash-icon {
+    display: block;
+  }
 }
 
 .form {

@@ -89,6 +89,49 @@ function init () {
     parentNumberControls.dataset.itemCount = currentItemCount;
     parentNumberControls.querySelector('.number-controls__count-value').textContent = currentItemCount;
   }
+
+
+  // CHECKOUT FORM
+  const elCheckoutForm = document.querySelector('#checkout-form');
+  const elFormPaymentMethodTabs = elCheckoutForm.querySelector('.form-payment-method__tabs');
+  const elsFormPaymentMethodTab = elCheckoutForm.querySelectorAll('.form-payment-method__tab');
+  const elsFormPaymentEMoneyField = elCheckoutForm.querySelectorAll('.form-payment-method__e-money-field');
+
+  function hidePaymentMethodTabs () {
+    elsFormPaymentMethodTab.forEach(function (elFormPaymentMethodTab) {
+      elFormPaymentMethodTab.setAttribute('hidden', 'true');
+    });
+  }
+
+  function enableEMoneyFields() {
+    elsFormPaymentEMoneyField.forEach(function (elFormPaymentEMoneyField) {
+      elFormPaymentEMoneyField.setAttribute('disabled', 'false');
+    });
+  }
+
+  function disableEMoneyFields() {
+    elsFormPaymentEMoneyField.forEach(function (elFormPaymentEMoneyField) {
+      elFormPaymentEMoneyField.setAttribute('disabled', 'true');
+    });
+  }
+
+  if (elCheckoutForm) {
+    const elsPaymentMethodRadioInputs = elCheckoutForm.querySelectorAll('.form-payment-method__radio-input');
+
+    elsPaymentMethodRadioInputs.forEach(function (elPaymentMethodRadioInput) {
+      elPaymentMethodRadioInput.addEventListener('change', function () {
+        hidePaymentMethodTabs();
+        disableEMoneyFields();
+
+        const target = elPaymentMethodRadioInput.dataset.target;
+        elFormPaymentMethodTabs.querySelector(`[data-tab="${target}"]`).removeAttribute('hidden');
+
+        if (target === 'e-money') {
+          enableEMoneyFields();
+        }
+      });
+    });
+  }
 }
 
 document.addEventListener('DOMContentLoaded', init);

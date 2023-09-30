@@ -1,0 +1,37 @@
+.form-payment-method {
+  display: grid;
+  gap: 16px;
+
+  @include breakpoint-up ($breakpoint-medium-small) {
+    gap: 12px;
+  }
+
+  @include breakpoint-up ($breakpoint-large) {
+    gap: 16px;
+  }
+}
+
+.form-payment-method__radio {
+  grid-column: 2 / -1;
+}
+
+.form-payment-method__tabs {
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+}
+
+.form-payment-method__cash-info {
+  @include breakpoint-up ($breakpoint-medium-small) {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.form-payment-method__cash-icon {
+  display: none;
+
+  @include breakpoint-up ($breakpoint-medium-small) {
+    display: block;
+  }
+}

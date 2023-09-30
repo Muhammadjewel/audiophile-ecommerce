@@ -80,6 +80,7 @@
           <!-- CART-CARD -->
           <div class="container">
             <section class="header__cart-card cart-card">
+              <!-- TODO change header to div element -->
               <header class="cart-card__header">
                 <h2 class="cart-card__heading">Cart (3)</h2>
                 <button class="cart-card__remove-items-button" type="button">Remove all</button>
@@ -157,7 +158,7 @@
         <h1 class="checkout-page__heading">Checkout</h1>
 
         <!-- CHECKOUT-FORM -->
-        <form class="checkout-form form" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="checkout-form form" id="checkout-form" action="https://echo.htmlacademy.ru" method="POST">
           <h2 class="visually-hidden">Checkout form</h2>
 
           <section class="form__section">
@@ -211,31 +212,53 @@
           <section class="form__section">
             <h3 class="form__section-heading">Payment details</h3>
 
-            <div class="form__section-inner">
-              <label class="form__label">Payment Method</label>
+            <div class="form-payment-method">
+              <div class="form-payment-method__inner form__section-inner">
+                <label class="form-payment-method__label form__label">Payment Method</label>
 
-              <label class="radio">
-                <input class="radio__input visually-hidden" type="radio" name="payment_type" value="e-money" checked>
-                <span class="radio__control">
-                  <span class="radio__circle"></span>
-                  <div class="radio__text">e-Money</div>
-                </span>
-              </label>
+                <label class="form-payment-method__radio radio">
+                  <input class="form-payment-method__radio-input radio__input visually-hidden" type="radio" name="payment_type" value="e-money" data-target="e-money" checked>
+                  <span class="radio__control">
+                    <span class="radio__circle"></span>
+                    <span class="radio__text">e-Money</span>
+                  </span>
+                </label>
 
-              <label class="radio">
-                <input class="radio__input visually-hidden" type="radio" name="payment_type" value="cash">
-                <span class="radio__control">
-                  <span class="radio__circle"></span>
-                  <div class="radio__text">Cash on Delivery</div>
-                </span>
-              </label>
+                <label class="form-payment-method__radio radio">
+                  <input class="form-payment-method__radio-input radio__input visually-hidden" type="radio" name="payment_type" value="cash" data-target="cash">
+                  <span class="radio__control">
+                    <span class="radio__circle"></span>
+                    <span class="radio__text">Cash on Delivery</span>
+                  </span>
+                </label>
+              </div>
 
               <!-- Tabs -->
-              <div class="form__section-tabs">
-                <div class="form__section-tab">
+              <div class="form-payment-method__tabs">
+                <!-- E-money tab -->
+                <div class="form-payment-method__tab" data-tab="e-money">
+                  <div class="form__section-inner">
+                    <div class="form__group">
+                      <input class="form-payment-method__e-money-field form__field" type="text" name="e_money_number" id="e-money-number-input" placeholder="238521993" required>
+                      <label class="form__label" for="e-money-number-input">e-Money Number</label>
+                    </div>
+
+                    <div class="form__group">
+                      <input class="form-payment-method__e-money-field form__field" type="text" inputmode="numeric" name="e_money_pin" id="e-money-pin-input" placeholder="6891" required>
+                      <label class="form__label" for="e-money-pin-input">e-Money Number</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-payment-method__tab" data-tab="cash" hidden>
+                  <div class="form-payment-method__cash-info">
+                    <img class="form-payment-method__cash-icon" src="img/icon-cash-payment.svg" alt="" width="48" height="48" aria-hidden="true">
+                    <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives at your residence. Just make sure your address is correct so that your order will not be cancelled.</p>
+                  </div>
                 </div>
               </div>
             </div>
+
           </section>
         </form>
       </div>
@@ -304,7 +327,7 @@
               </div>
             </dl>
 
-            <button class="button button--primary button--block" type="submit">Continue & pay</button>
+            <button class="button button--primary button--block" type="submit" form="checkout-form">Continue & pay</button>
           </div>
         </section>
       </div>
