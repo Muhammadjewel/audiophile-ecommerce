@@ -1,0 +1,76 @@
+.modal {
+  display: none;
+
+  &--open {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 199;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 48px 24px;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+  }
+}
+
+.modal__dialog {
+  width: 100%;
+  max-width: 33.75rem;
+  max-height: 100%;
+}
+
+.modal__content {
+  padding: 32px;
+  border-radius: 8px;
+  background-color: var(--color-white);
+
+  @include breakpoint-up ($breakpoint-medium-small) {
+    padding: 48px;
+  }
+}
+
+.modal__icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 24px;
+
+  @include breakpoint-up ($breakpoint-medium-small) {
+    margin-bottom: 32px;
+  }
+}
+
+.modal__heading {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  line-height: 116.667%;
+  letter-spacing: 0.05356rem;
+  color: var(--color-black);
+  text-transform: uppercase;
+
+  @include breakpoint-up ($breakpoint-medium-small) {
+    font-size: 2rem;
+    line-height: 112.5%;
+    letter-spacing: 0.07144rem;
+  }
+}
+
+.modal__text {
+  margin-bottom: 24px;
+
+  @include breakpoint-up ($breakpoint-medium-small) {
+    margin-bottom: 32px;
+  }
+}
+
+.modal__purchased-products {
+  margin-bottom: 24px;
+
+  @include breakpoint-up ($breakpoint-medium-small) {
+    margin-bottom: 48px;
+  }
+}

@@ -13,10 +13,20 @@
   @include round-card($width: 64px, $height: 64px);
 }
 
+.product-cart-card--small .product-cart-card__img-wrapper {
+  width: 50px;
+  height: 50px;
+}
+
 .product-cart-card__img {
   width: 48px;
   height: 48px;
   object-fit: contain;
+}
+
+.product-cart-card--small .product-cart-card__img {
+  width: 32px;
+  height: 32px;
 }
 
 .product-cart-card__info {
