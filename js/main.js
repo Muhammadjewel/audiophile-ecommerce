@@ -121,6 +121,7 @@ function init () {
     });
   }
 
+  // TODO: move change event listener to list and capture input change
   if (elCheckoutForm) {
     const elsPaymentMethodRadioInputs = elCheckoutForm.querySelectorAll('.form-payment-method__radio-input');
 
