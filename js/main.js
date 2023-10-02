@@ -93,9 +93,15 @@ function init () {
 
   // CHECKOUT FORM
   const elCheckoutForm = document.querySelector('#checkout-form');
-  const elFormPaymentMethodTabs = elCheckoutForm.querySelector('.form-payment-method__tabs');
-  const elsFormPaymentMethodTab = elCheckoutForm.querySelectorAll('.form-payment-method__tab');
-  const elsFormPaymentEMoneyField = elCheckoutForm.querySelectorAll('.form-payment-method__e-money-field');
+  let elFormPaymentMethodTabs = '';
+  let elsFormPaymentMethodTab = '';
+  let elsFormPaymentEMoneyField = '';
+
+  if (elCheckoutForm) {
+    elFormPaymentMethodTabs = elCheckoutForm.querySelector('.form-payment-method__tabs');
+    elsFormPaymentMethodTab = elCheckoutForm.querySelectorAll('.form-payment-method__tab');
+    elsFormPaymentEMoneyField = elCheckoutForm.querySelectorAll('.form-payment-method__e-money-field');
+  }
 
   function hidePaymentMethodTabs () {
     elsFormPaymentMethodTab.forEach(function (elFormPaymentMethodTab) {
