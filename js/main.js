@@ -139,6 +139,21 @@ function init () {
       });
     });
   }
+
+
+  // PRODUCTS-LIST
+  const elProductsList = document.querySelector('.products-list');
+  if (elProductsList) {
+    const elProductsListToggler = elProductsList.querySelector('.products-list__toggler');
+
+    if (elProductsListToggler) {
+      elProductsListToggler.addEventListener('click', function () {
+        elProductsList.classList.toggle('products-list--collapsed');
+
+        elProductsListToggler.textContent = elProductsList.classList.contains('products-list--collapsed') ? 'and 2 other item(s)' : 'View less';
+      });
+    }
+  }
 }
 
 document.addEventListener('DOMContentLoaded', init);
