@@ -141,6 +141,17 @@ function init () {
   }
 
 
+  // MODAL
+  if (elCheckoutForm) {
+    elCheckoutForm.addEventListener('submit', function (evt) {
+      evt.preventDefault();
+
+      const elModal = document.querySelector('.modal');
+      elModal.classList.add('modal--open');
+    });
+  }
+
+
   // PRODUCTS-LIST
   const elProductsList = document.querySelector('.products-list');
   if (elProductsList) {
